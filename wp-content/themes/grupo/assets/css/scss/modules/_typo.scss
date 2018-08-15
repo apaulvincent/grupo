@@ -1,0 +1,179 @@
+body {
+    font-family: $font-cons-r;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $brand-b;
+    background: $brand-7;
+}
+
+p {
+    font-size: $font-size-base;
+    line-height: 1.6;
+}
+
+
+.mega {
+    font-family: $font-cons-b;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 20px;
+
+    @include screen-max-sm(){
+        font-size: 30px;
+    } 
+}
+
+.large {
+    font-family: $font-cons-b;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 20px;
+
+    @include screen-max-sm(){
+        font-size: 30px;
+    } 
+}
+
+h1, .h1 {
+    font-family: $font-cons-r;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+
+    @include screen-max-sm(){
+        font-size: 30px;
+    } 
+}
+
+h2, .h2 {
+    font-family: $font-cons-r;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+
+    @include screen-max-sm(){
+        font-size: 30px;
+    } 
+}
+
+h3, .h3 {
+    font-family: $font-mont-b;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin: 30px 0 10px;
+    text-transform: uppercase;
+
+    @include screen-max-sm(){
+        font-size: 14px;
+    } 
+}
+
+h4, .h4 {
+    font-family: $font-cons-r;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 30px;
+
+    @include screen-max-sm(){
+        font-size: 16px;
+    }  
+}
+
+h5, .h5 {
+    font-family: $font-regular;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 15px;
+
+    @include screen-max-sm(){
+        font-size: 14px;
+    }  
+}
+
+h6, .h6 {
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 1.4;
+
+    @include screen-max-sm(){
+        font-size: 14px;
+    }  
+}
+
+a {
+    color: $brand-2;
+
+    &:hover {
+        text-decoration: none;
+        color: $brand-3;
+    }
+ }
+
+ strong, b {
+     font-weight: normal;
+    font-family: $font-cons-b;
+ }
+
+blockquote {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border: 1px solid $tint-8;
+    margin: 30px 0 30px;
+
+    th {
+        padding: 10px;
+        font-weight: normal;
+        background: $tint-9;
+        text-transform: uppercase;
+        border: 1px solid $tint-7;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid $tint-7;
+        line-height: 1.2;
+    }
+}
+
+ul, ol {
+    font-size: $font-size-base;
+    margin: 0 0 20px;
+    padding: 0 0 0 24px;
+
+    li {
+        margin: 0 0 8px;
+    }
+}
+
+
+.post-meta {
+    h3 {
+        font-size: 20px;
+        line-height: 1;
+        margin: 0 0 10px;
+    }
+
+    p {
+        font-family: $font-mont-r;
+        font-size: 12px;
+    }
+}
+
+.blog-entry {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+.contact-entry {
+    
+    h3 {
+        margin-top: 0;
+    }
+}

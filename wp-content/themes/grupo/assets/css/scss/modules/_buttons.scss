@@ -1,0 +1,93 @@
+button {
+    outline: none;
+}
+
+.btn {
+    padding: 0 30px;
+    font-size: 12px;
+    line-height: 58px;
+    height: 58px;
+    background: $tint-b;
+    border-color: $tint-b;
+    color: $brand-w;
+    vertical-align: middle;
+    text-align: center;
+    font-family: $font-mont-b;
+    letter-spacing: 2px;
+    white-space: pre-wrap;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    @include round-corners(0);
+    @include transition(0.4s all ease);
+
+    &:hover, 
+    &:focus, 
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background: $tint-2;
+        border-color: $tint-2;
+        color: $brand-w;
+        outline: none;
+        @include box-shadow(none);
+    }
+
+    &.btn-full {
+        width: 100%;
+    }
+
+    &.btn-lg {
+        height: 68px;
+        line-height: 68px; 
+    }
+
+    &:disabled {
+        background: $tint-4;
+        border-color: $tint-4;
+    }
+
+}
+
+.btn-1 {
+    border-color: $tint-1;
+    background: $tint-1;
+    color: $brand-w !important;
+}
+
+
+.btn-2 {
+    border-color: $tint-2;
+    background: $tint-2;
+    color: $brand-w !important;
+}
+
+.btn-3 {
+    border-color: $tint-4;
+    background: transparent;
+    color: $brand-4 !important;
+
+    &:hover, 
+    &:focus, 
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $brand-w;
+        background: $tint-4;
+    }
+}
+
+.btn-4 {
+    border-color: $tint-4;
+    background: $tint-4;
+    color: $brand-w;
+
+    &:hover, 
+    &:focus, 
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background: $tint-6;
+        border-color: $tint-6;
+    }
+}
+

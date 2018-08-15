@@ -1,0 +1,100 @@
+// ======================================================================
+   // Vars
+// ======================================================================
+
+// Colors
+
+$brand-1: #029bff;  $tint-1: $brand-1;
+$brand-2: #0066cb;  $tint-2: $brand-2;
+$brand-3: #003399;  $tint-3: $brand-3;
+$brand-4: #9900cc;  $tint-4: $brand-4;
+$brand-5: #6600cd;  $tint-5: $brand-5;
+$brand-6: #c8c8c8;  $tint-6: $brand-6;
+$brand-7: #dedede;  $tint-7: $brand-7;
+
+// -- separator
+$brand-8: #eeeeee;  $tint-8: $brand-8;
+$brand-9: #f5f5f5;  $tint-9: $brand-9;
+
+$brand-w: #ffffff; $tint-w: $brand-w;
+$brand-b: #000000; $tint-b: $brand-b;
+
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #ff6161;
+
+$placeholder-color: #cccccc;
+
+
+// Typography
+
+$font-regular: 'Constantia', sans-serif;
+$font-light: 'Constantia', sans-serif;
+$font-book: 'Constantia', sans-serif;
+$font-medium: 'Constantia', sans-serif;
+$font-bold: 'Constantia Bold', sans-serif;
+
+
+$font-cons-r: 'Constantia', sans-serif;
+$font-cons-b: 'Constantia Bold', sans-serif;
+$font-mont-r: 'montserratregular', sans-serif;
+$font-mont-b: 'montserratbold', sans-serif;
+
+
+
+$font-size-base: 15px;
+$line-height-base: 1.4;
+$text-color: $brand-4;
+
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-4, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+
+// GRID SYSTEM VARIABLES: DO NOT EDIT!
+
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);

@@ -1,0 +1,169 @@
+.wide-gutter.row {
+    margin-right: -25px;
+    margin-left: -25px;
+
+    @include screen-max-sm(){
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+}
+
+.wide-gutter > [class^="col-"], 
+.wide-gutter > [class^=" col-"] {
+    padding-right: 25px;
+    padding-left: 25px;
+
+    @include screen-max-sm(){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+}
+
+
+.title-bar {
+    background: $tint-3;
+    color: $brand-w;
+    padding: 100px 0 40px;
+
+    @include screen-max-sm(){
+        padding: 40px 0;
+    }
+
+    h1, h1.large {
+        margin: 0;
+    }
+}
+
+
+.main {
+    padding: 30px 0 100px;
+  
+    @include screen-max-sm(){
+        padding: 60px 0;
+    }
+
+    .featured-image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .entry {
+
+        padding: 60px 24px;
+        background: $tint-w;
+
+        &.blog-entry {
+            padding: 30px;
+            margin: 0 0 50px;
+        }
+
+    }
+  
+}
+
+
+.reusable-block {
+    padding: 100px 0;
+
+    @include screen-max-sm(){
+        padding: 60px 0;
+    }
+
+
+    .block-title {
+        font-family: $font-cons-b;
+        font-size: 46px;
+        line-height: 1;
+        margin: 0 0 20px;
+    
+        @include screen-max-sm(){
+            font-size: 30px;
+        } 
+        
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            border-bottom: 1px solid $tint-b;
+            margin: 5px 0 0;
+        }
+    }
+
+}
+
+
+.cta-block {
+    display: block;
+    padding: 20px 30px 38px;
+    font-size: 16px;
+    line-height: 1.2; 
+    margin: 0 0 25px;
+
+    i {
+        font-size: 18px;
+        display: block;
+        margin: 0 0 4px;
+    }
+}
+
+.cta-block-full {
+    padding: 60px 0;
+
+     h4 {
+       margin: 0;
+     }
+
+     i {
+          display: inline-block;
+      }
+
+
+     a {
+       color: $brand-w;
+     }
+}
+  
+.eq-blocks {
+
+    .eq-block-wrap {
+        margin-bottom: 30px;
+            
+        @include screen-max-sm(){
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .img-block {
+        padding-top: 260px;
+        background-size: cover;
+        background-position: center;
+    }
+            
+    .eq-block {
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+
+
+}
+  
+  
+  .standard-content-block {
+      margin: 0 0 30px;
+  }
+
+
+
+.map-container {
+	width: 100%;
+	height: 300px;
+	margin: 0;
+}
