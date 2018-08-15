@@ -176,16 +176,18 @@ if( $page_setup['content_reusable_blocks'] ) {
 <?php endif ?>
 
 <!-- Modal: Subscribe Form-->
-<div class="modal fade" id="dfp-subscribe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="vid-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span class="pe-7s-close"></span>
+			<i class="material-icons">close</i>
 		</button>
 	  </div>
       <div class="modal-body">
-	  	<?php echo do_shortcode('[mc4wp_form id="3533" element_id="mc4wp-newsletter-signup"]'); ?>
+	
+	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/whZNYPldMEY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
       </div>
     </div>
   </div>
@@ -195,7 +197,7 @@ if( $page_setup['content_reusable_blocks'] ) {
 
 
 <div class="social-share d-none d-lg-block">
-	<?php echo do_shortcode('[ssba-buttons]'); ?>
+	<?php //echo do_shortcode('[ssba-buttons]'); ?>
 </div>
 
 <?php wp_footer(); ?>

@@ -14,7 +14,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj3H1hUZKVCKqi15bIs1xK4EuxIBf2F5s"></script>
 <?php endif ?>
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
 </head>
 
@@ -31,18 +31,16 @@ $page_setup = get_fields();
 <div id="site-wrap" class="site-wrap">
 
 	<header class="site-header">
-
-		<div class="site-header-inner">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
-						<div class="header-wrap">
+						<div class="inner">
 
 							<a href="<?php echo home_url(); ?>" class="branding">
 								<?php
 
 									$site_logo = get_field('desktop_site_logo', 'option');
-
+								
 									if($site_logo) {
 										echo "<img src='".$site_logo."' width='338'/>";
 									} else{
@@ -51,21 +49,18 @@ $page_setup = get_fields();
 								?>
 							</a>
 
-							<div class="float-right">
-								<?php include(locate_template('partials/common/header-mainnav.php')); ?>
-							</div>
+							<?php include(locate_template('partials/common/header-main-nav.php')); ?>
 
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</header><!-- #masthead -->
 	
 
 
-	<?php echo $DB_Content->get_section_spacer('98', ['header-spacer']); ?>
+	<?php echo $DB_Content->get_section_spacer('76', ['header-spacer']); ?>
 
-	<?php include(locate_template('partials/common/header-subnav.php')); ?>
+	<?php //include(locate_template('partials/common/header-mobile-nav.php')); ?>
 
 	<?php include(locate_template('partials/common/header-banner.php')); ?>

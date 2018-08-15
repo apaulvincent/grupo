@@ -7,24 +7,15 @@
   margin: 0;
   padding: 0;
   z-index: 99;
-  
-  .site-header-inner {
-    background: $brand-w;
-    z-index: 10;
+  background: $brand-w;
+  @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.18));
 
-  }
-
-  .header-wrap {
-    padding: 15px 0;
+  .inner {
+    height: 76px;
     
     @include screen-max-md(){
-      padding: 10px 0;
     }
 
-  }
-
-  @include screen-max-sm(){
-    margin: 0;  
   }
 
 }
@@ -33,51 +24,22 @@
 .branding {
   display: inline-block;
   width: 125px;
+  float: left;
+  margin: 10px 20px 0 0;
 
   img {
       max-width: 100%;
   }
 
   @include screen-max-md(){
-    width: 200px;
-  }
-}
-
-.site-controls {
-  padding: 0 0 20px;
-}
-
-.site-info {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-  li {
-    display: inline-block;
-    color: $brand-w;
-    margin-left: 20px;
-    font-size: 14px;
-
-    a {
-      color: $brand-w;
-    }
-
-    i {
-      margin-right: 8px;
-      color: $brand-7;
-    }
+    width: 125px;
   }
 }
 
 
 .header-spacer{
   @include screen-max-md(){
-      margin-bottom: 60px !important;
+      // margin-bottom: 60px !important;
   }
-}
-
-
-.call-btn {
-  width: 100%;
 }
 

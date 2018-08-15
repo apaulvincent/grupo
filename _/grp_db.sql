@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 15, 2018 at 09:00 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.0.23
+-- Generation Time: Aug 15, 2018 at 01:18 PM
+-- Server version: 10.1.22-MariaDB
+-- PHP Version: 7.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -188,7 +188,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (80, 'widget_rss', 'a:0:{}', 'yes'),
 (81, 'uninstall_plugins', 'a:0:{}', 'no'),
 (82, 'timezone_string', '', 'yes'),
-(83, 'page_for_posts', '0', 'yes'),
+(83, 'page_for_posts', '87', 'yes'),
 (84, 'page_on_front', '2', 'yes'),
 (85, 'default_post_format', '0', 'yes'),
 (86, 'link_manager_enabled', '0', 'yes'),
@@ -218,7 +218,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (110, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (112, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(113, 'cron', 'a:5:{i:1534318428;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1534343628;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1534386839;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1534390632;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(113, 'cron', 'a:5:{i:1534332828;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1534343628;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1534386839;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1534390632;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (114, 'theme_mods_twentyseventeen', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1534300585;s:4:\"data\";a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:9:\"sidebar-3\";a:0:{}}}}', 'yes'),
 (118, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-4.9.8.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-4.9.8.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-4.9.8-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-4.9.8-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"4.9.8\";s:7:\"version\";s:5:\"4.9.8\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"4.7\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1534300434;s:15:\"version_checked\";s:5:\"4.9.8\";s:12:\"translations\";a:0:{}}', 'no'),
 (120, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1534300437;s:7:\"checked\";a:5:{s:34:\"advanced-custom-fields-pro/acf.php\";s:5:\"5.7.2\";s:36:\"contact-form-7/wp-contact-form-7.php\";s:5:\"5.0.3\";s:33:\"duplicate-post/duplicate-post.php\";s:5:\"3.2.2\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:5:\"3.0.2\";s:57:\"simple-share-buttons-adder/simple-share-buttons-adder.php\";s:6:\"7.4.18\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:4:{s:36:\"contact-form-7/wp-contact-form-7.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/contact-form-7\";s:4:\"slug\";s:14:\"contact-form-7\";s:6:\"plugin\";s:36:\"contact-form-7/wp-contact-form-7.php\";s:11:\"new_version\";s:5:\"5.0.3\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/contact-form-7/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/contact-form-7.5.0.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:66:\"https://ps.w.org/contact-form-7/assets/icon-256x256.png?rev=984007\";s:2:\"1x\";s:66:\"https://ps.w.org/contact-form-7/assets/icon-128x128.png?rev=984007\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:69:\"https://ps.w.org/contact-form-7/assets/banner-1544x500.png?rev=860901\";s:2:\"1x\";s:68:\"https://ps.w.org/contact-form-7/assets/banner-772x250.png?rev=880427\";}s:11:\"banners_rtl\";a:0:{}}s:33:\"duplicate-post/duplicate-post.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/duplicate-post\";s:4:\"slug\";s:14:\"duplicate-post\";s:6:\"plugin\";s:33:\"duplicate-post/duplicate-post.php\";s:11:\"new_version\";s:5:\"3.2.2\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/duplicate-post/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/duplicate-post.3.2.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/duplicate-post/assets/icon-256x256.png?rev=1612753\";s:2:\"1x\";s:67:\"https://ps.w.org/duplicate-post/assets/icon-128x128.png?rev=1612753\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:69:\"https://ps.w.org/duplicate-post/assets/banner-772x250.png?rev=1612986\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/regenerate-thumbnails\";s:4:\"slug\";s:21:\"regenerate-thumbnails\";s:6:\"plugin\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:11:\"new_version\";s:5:\"3.0.2\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/regenerate-thumbnails/\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:74:\"https://ps.w.org/regenerate-thumbnails/assets/icon-128x128.png?rev=1753390\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/regenerate-thumbnails/assets/banner-1544x500.jpg?rev=1753390\";s:2:\"1x\";s:76:\"https://ps.w.org/regenerate-thumbnails/assets/banner-772x250.jpg?rev=1753390\";}s:11:\"banners_rtl\";a:0:{}}s:57:\"simple-share-buttons-adder/simple-share-buttons-adder.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:40:\"w.org/plugins/simple-share-buttons-adder\";s:4:\"slug\";s:26:\"simple-share-buttons-adder\";s:6:\"plugin\";s:57:\"simple-share-buttons-adder/simple-share-buttons-adder.php\";s:11:\"new_version\";s:6:\"7.4.18\";s:3:\"url\";s:57:\"https://wordpress.org/plugins/simple-share-buttons-adder/\";s:7:\"package\";s:76:\"https://downloads.wordpress.org/plugin/simple-share-buttons-adder.7.4.18.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:79:\"https://ps.w.org/simple-share-buttons-adder/assets/icon-256x256.png?rev=1267481\";s:2:\"1x\";s:79:\"https://ps.w.org/simple-share-buttons-adder/assets/icon-256x256.png?rev=1267481\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:82:\"https://ps.w.org/simple-share-buttons-adder/assets/banner-1544x500.png?rev=1267481\";s:2:\"1x\";s:81:\"https://ps.w.org/simple-share-buttons-adder/assets/banner-772x250.png?rev=1267481\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
@@ -249,7 +249,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (142, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1534343645', 'no'),
 (143, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2018/08/wordpress-4-9-8-maintenance-release/\'>WordPress 4.9.8 Maintenance Release</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/syed-balkhi-launches-a-wordpress-focused-growth-accelerator-fund\'>WPTavern: Syed Balkhi Launches A WordPress-focused Growth Accelerator Fund</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/sami-keijonens-foxland-themes-and-plugins-are-now-available-for-free\'>WPTavern: Sami Keijonen’s Foxland Themes and Plugins are Now Available for Free</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/new-backyourstack-tool-drives-financial-support-for-open-source-projects\'>WPTavern: New BackYourStack Tool Drives Financial Support for Open Source Projects</a></li></ul></div>', 'no'),
 (144, 'current_theme', 'DFP', 'yes'),
-(145, 'theme_mods_grupo', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
+(145, 'theme_mods_grupo', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:2;}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
 (146, 'theme_switched', '', 'yes'),
 (147, '_transient_timeout_plugin_slugs', '1534387539', 'no'),
 (148, '_transient_plugin_slugs', 'a:5:{i:0;s:34:\"advanced-custom-fields-pro/acf.php\";i:1;s:36:\"contact-form-7/wp-contact-form-7.php\";i:2;s:33:\"duplicate-post/duplicate-post.php\";i:3;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";i:4;s:57:\"simple-share-buttons-adder/simple-share-buttons-adder.php\";}', 'no'),
@@ -285,7 +285,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (180, 'ssba_settings', '{\"ssba_image_set\":\"somacro\",\"ssba_size\":\"35\",\"ssba_pages\":\"\",\"ssba_posts\":\"\",\"ssba_cats_archs\":\"\",\"ssba_homepage\":\"\",\"ssba_excerpts\":\"\",\"ssba_plus_pages\":\"\",\"ssba_plus_posts\":\"\",\"ssba_plus_cats_archs\":\"\",\"ssba_plus_homepage\":\"\",\"ssba_plus_excerpts\":\"\",\"ssba_bar_pages\":\"\",\"ssba_bar_posts\":\"\",\"ssba_bar_cats_archs\":\"\",\"ssba_bar_homepage\":\"\",\"ssba_bar_excerpts\":\"\",\"ssba_align\":\"left\",\"ssba_plus_align\":\"left\",\"ssba_bar_align\":\"left\",\"ssba_padding\":\"6\",\"ssba_before_or_after\":\"after\",\"ssba_before_or_after_plus\":\"after\",\"ssba_additional_css\":\"\",\"ssba_custom_styles\":\"\",\"ssba_custom_styles_enabled\":\"\",\"ssba_plus_additional_css\":\"\",\"ssba_plus_custom_styles\":\"\",\"ssba_plus_custom_styles_enabled\":\"\",\"ssba_bar_additional_css\":\"\",\"ssba_bar_custom_styles\":\"\",\"ssba_bar_custom_styles_enabled\":\"\",\"ssba_email_message\":\"\",\"ssba_twitter_text\":\"\",\"ssba_buffer_text\":\"\",\"ssba_flattr_user_id\":\"\",\"ssba_flattr_url\":\"\",\"ssba_bar_share_new_window\":\"Y\",\"ssba_share_new_window\":\"Y\",\"ssba_plus_share_new_window\":\"Y\",\"ssba_link_to_ssb\":\"N\",\"ssba_show_share_count\":\"\",\"ssba_plus_show_share_count\":\"\",\"ssba_bar_show_share_count\":\"\",\"ssba_share_count_style\":\"default\",\"ssba_share_count_css\":\"\",\"ssba_share_count_once\":\"Y\",\"ssba_plus_share_count_style\":\"default\",\"ssba_plus_share_count_css\":\"\",\"ssba_plus_share_count_once\":\"Y\",\"ssba_bar_share_count_style\":\"default\",\"ssba_bar_share_count_css\":\"\",\"ssba_bar_share_count_once\":\"Y\",\"ssba_widget_text\":\"\",\"ssba_rel_nofollow\":\"\",\"ssba_default_pinterest\":\"\",\"ssba_pinterest_featured\":\"\",\"ssba_plus_widget_text\":\"\",\"ssba_plus_rel_nofollow\":\"\",\"ssba_plus_default_pinterest\":\"\",\"ssba_plus_pinterest_featured\":\"\",\"ssba_bar_widget_text\":\"\",\"ssba_bar_rel_nofollow\":\"\",\"ssba_bar_default_pinterest\":\"\",\"ssba_bar_pinterest_featured\":\"\",\"ssba_content_priority\":\"10\",\"ssba_div_padding\":\"\",\"ssba_div_rounded_corners\":\"\",\"ssba_border_width\":\"\",\"ssba_div_border\":\"\",\"ssba_div_background\":\"\",\"ssba_share_text\":\"Share this...\",\"ssba_text_placement\":\"above\",\"ssba_font_family\":\"\",\"ssba_font_color\":\"\",\"ssba_font_size\":\"12\",\"ssba_font_weight\":\"\",\"ssba_plus_share_text\":\"Share this...\",\"ssba_plus_text_placement\":\"above\",\"ssba_plus_font_family\":\"\",\"ssba_plus_font_color\":\"\",\"ssba_plus_font_size\":\"12\",\"ssba_plus_font_weight\":\"\",\"ssba_selected_buttons\":\"facebook,google,twitter,linkedin\",\"ssba_selected_bar_buttons\":\"facebook,google,twitter,linkedin\",\"ssba_selected_plus_buttons\":\"facebook,google,twitter,linkedin\",\"ssba_plus_button_style\":1,\"ssba_bar_style\":1,\"ssba_new_buttons\":\"\",\"ssba_bar_enabled\":\"\",\"ssba_bar_position\":\"left\",\"ssba_plus_height\":\"48\",\"ssba_plus_width\":\"48\",\"ssba_plus_margin\":\"12\",\"ssba_plus_button_color\":\"\",\"ssba_plus_button_hover_color\":\"\",\"ssba_plus_icon_size\":\"\",\"ssba_plus_icon_color\":\"\",\"ssba_plus_icon_hover_color\":\"\",\"ssba_bar_height\":\"48\",\"ssba_bar_width\":\"48\",\"ssba_bar_margin\":\"0\",\"ssba_bar_icon_size\":\"\",\"ssba_bar_button_color\":\"\",\"ssba_bar_button_hover_color\":\"\",\"ssba_bar_icon_color\":\"\",\"ssba_bar_icon_hover_color\":\"\",\"ssba_bar_desktop\":\"Y\",\"ssba_bar_mobile\":\"Y\",\"ssba_mobile_breakpoint\":\"\",\"ssba_custom_email\":\"\",\"ssba_custom_google\":\"\",\"ssba_custom_facebook\":\"\",\"ssba_custom_twitter\":\"\",\"ssba_custom_diggit\":\"\",\"ssba_custom_linkedin\":\"\",\"ssba_custom_reddit\":\"\",\"ssba_custom_stumbleupon\":\"\",\"ssba_custom_pinterest\":\"\",\"ssba_custom_buffer\":\"\",\"ssba_custom_flattr\":\"\",\"ssba_custom_tumblr\":\"\",\"ssba_custom_print\":\"\",\"ssba_custom_vk\":\"\",\"ssba_custom_yummly\":\"\",\"ssba_custom_facebook_save\":\"\",\"sharedcount_enabled\":\"\",\"sharedcount_api_key\":\"\",\"sharedcount_plan\":\"free\",\"sharedcount_plus_enabled\":\"\",\"sharedcount_plus_api_key\":\"\",\"sharedcount_plus_plan\":\"free\",\"sharedcount_share_enabled\":\"\",\"sharedcount_share_api_key\":\"\",\"sharedcount_share_plan\":\"free\",\"twitter_newsharecounts\":\"\",\"plus_twitter_newsharecounts\":\"\",\"share_twitter_newsharecounts\":\"\",\"facebook_insights\":\"\",\"facebook_app_id\":\"\",\"ignore_facebook_sdk\":\"\",\"plus_facebook_insights\":\"\",\"plus_facebook_app_id\":\"\",\"plus_ignore_facebook_sdk\":\"\",\"share_facebook_insights\":\"\",\"share_facebook_app_id\":\"\",\"accepted_sharethis_terms\":\"Y\"}', 'yes'),
 (181, 'ssba_version', '7.4.18', 'yes'),
 (185, 'options_desktop_site_logo', '66', 'no'),
-(186, '_options_desktop_site_logo', 'field_desktop_logo', 'no');
+(186, '_options_desktop_site_logo', 'field_desktop_logo', 'no'),
+(194, '_site_transient_timeout_browser_11d9a73fb38b2f1c4799e1f5e17c7b14', '1534929035', 'no'),
+(195, '_site_transient_browser_11d9a73fb38b2f1c4799e1f5e17c7b14', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"68.0.3440.106\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(196, 'category_children', 'a:0:{}', 'yes'),
+(198, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:\"auto_add\";a:1:{i:0;i:2;}}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -316,7 +320,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (9, 3, '_edit_lock', '1534303269:1'),
 (10, 3, '_edit_last', '1'),
 (11, 2, '_edit_last', '1'),
-(12, 2, '_edit_lock', '1534303316:1'),
+(12, 2, '_edit_lock', '1534326556:1'),
 (13, 9, '_wp_page_template', 'default'),
 (14, 9, '_dp_original', '2'),
 (15, 9, '_edit_lock', '1534303333:1'),
@@ -327,7 +331,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (21, 11, '_edit_last', '1'),
 (22, 13, '_wp_page_template', 'default'),
 (24, 13, '_dp_original', '11'),
-(25, 13, '_edit_lock', '1534303356:1'),
+(25, 13, '_edit_lock', '1534331243:1'),
 (26, 13, '_edit_last', '1'),
 (27, 15, '_wp_page_template', 'default'),
 (29, 15, '_dp_original', '11'),
@@ -410,7 +414,292 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (109, 70, 'content_link', ''),
 (110, 70, '_content_link', 'field_5b693de54c383'),
 (111, 70, 'post_category', ''),
-(112, 70, '_post_category', 'field_5b6b92b6e11c6');
+(112, 70, '_post_category', 'field_5b6b92b6e11c6'),
+(113, 71, '_wp_attached_file', '2018/08/Banner.jpg'),
+(114, 71, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1652;s:6:\"height\";i:617;s:4:\"file\";s:18:\"2018/08/Banner.jpg\";s:5:\"sizes\";a:11:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:18:\"Banner-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:18:\"Banner-300x112.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:112;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:18:\"Banner-768x287.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:287;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:19:\"Banner-1024x382.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:382;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"banner-image\";a:4:{s:4:\"file\";s:19:\"Banner-1400x500.jpg\";s:5:\"width\";i:1400;s:6:\"height\";i:500;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:17:\"feat-banner-image\";a:4:{s:4:\"file\";s:18:\"Banner-760x284.jpg\";s:5:\"width\";i:760;s:6:\"height\";i:284;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"listing-image\";a:4:{s:4:\"file\";s:18:\"Banner-560x560.jpg\";s:5:\"width\";i:560;s:6:\"height\";i:560;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"single-image\";a:4:{s:4:\"file\";s:18:\"Banner-560x360.jpg\";s:5:\"width\";i:560;s:6:\"height\";i:360;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-sm\";a:4:{s:4:\"file\";s:18:\"Banner-360x360.jpg\";s:5:\"width\";i:360;s:6:\"height\";i:360;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-md\";a:4:{s:4:\"file\";s:18:\"Banner-400x400.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:400;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-lg\";a:4:{s:4:\"file\";s:18:\"Banner-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(115, 72, '_wp_attached_file', '2018/08/standard-image.jpg'),
+(116, 72, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1087;s:6:\"height\";i:644;s:4:\"file\";s:26:\"2018/08/standard-image.jpg\";s:5:\"sizes\";a:11:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:26:\"standard-image-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:26:\"standard-image-300x178.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:178;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:26:\"standard-image-768x455.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:455;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:27:\"standard-image-1024x607.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:607;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"banner-image\";a:4:{s:4:\"file\";s:27:\"standard-image-1087x500.jpg\";s:5:\"width\";i:1087;s:6:\"height\";i:500;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:17:\"feat-banner-image\";a:4:{s:4:\"file\";s:26:\"standard-image-760x450.jpg\";s:5:\"width\";i:760;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"listing-image\";a:4:{s:4:\"file\";s:26:\"standard-image-560x560.jpg\";s:5:\"width\";i:560;s:6:\"height\";i:560;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"single-image\";a:4:{s:4:\"file\";s:26:\"standard-image-560x360.jpg\";s:5:\"width\";i:560;s:6:\"height\";i:360;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-sm\";a:4:{s:4:\"file\";s:26:\"standard-image-360x360.jpg\";s:5:\"width\";i:360;s:6:\"height\";i:360;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-md\";a:4:{s:4:\"file\";s:26:\"standard-image-400x400.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:400;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:8:\"thumb-lg\";a:4:{s:4:\"file\";s:26:\"standard-image-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(117, 2, 'show_banner', '1'),
+(118, 2, '_show_banner', 'field_5aeb88e804596'),
+(119, 2, 'banner_type', 'image-static'),
+(120, 2, '_banner_type', 'field_5aeb898437746'),
+(121, 2, 'banner_image', '71'),
+(122, 2, '_banner_image', 'field_5aeb8a0a37747'),
+(123, 2, 'banner_content', '<h1>we build\r\ngreat teams.</h1>\r\n<h2>Team Building &amp; corporate events</h2>'),
+(124, 2, '_banner_content', 'field_5aeb8ab437750'),
+(125, 2, 'content_reusable_blocks', ''),
+(126, 2, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(127, 2, 'sidebar_reusable_block', ''),
+(128, 2, '_sidebar_reusable_block', 'field_5b66670dd52b7'),
+(129, 2, 'title_bar_background', '#003399'),
+(130, 2, '_title_bar_background', 'field_5b693dc44c381'),
+(131, 2, 'content_link', ''),
+(132, 2, '_content_link', 'field_5b693de54c383'),
+(133, 2, 'post_category', ''),
+(134, 2, '_post_category', 'field_5b6b92b6e11c6'),
+(135, 73, 'show_banner', '1'),
+(136, 73, '_show_banner', 'field_5aeb88e804596'),
+(137, 73, 'banner_type', 'image-static'),
+(138, 73, '_banner_type', 'field_5aeb898437746'),
+(139, 73, 'banner_image', '71'),
+(140, 73, '_banner_image', 'field_5aeb8a0a37747'),
+(141, 73, 'banner_content', ''),
+(142, 73, '_banner_content', 'field_5aeb8ab437750'),
+(143, 73, 'content_reusable_blocks', ''),
+(144, 73, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(145, 73, 'sidebar_reusable_block', ''),
+(146, 73, '_sidebar_reusable_block', 'field_5b66670dd52b7'),
+(147, 73, 'title_bar_background', '#003399'),
+(148, 73, '_title_bar_background', 'field_5b693dc44c381'),
+(149, 73, 'content_link', ''),
+(150, 73, '_content_link', 'field_5b693de54c383'),
+(151, 73, 'post_category', ''),
+(152, 73, '_post_category', 'field_5b6b92b6e11c6'),
+(153, 22, '_edit_lock', '1534327005:1'),
+(154, 22, '_edit_last', '1'),
+(155, 2, 'button_type', 'Video'),
+(156, 2, '_button_type', 'field_5b73f436467fa'),
+(157, 2, 'button_text', ''),
+(158, 2, '_button_text', 'field_5b73f48c467fb'),
+(159, 2, 'button_url', ''),
+(160, 2, '_button_url', 'field_5b73f4ae467fc'),
+(161, 2, 'banner_background_color', '#00C1FF'),
+(162, 2, '_banner_background_color', 'field_5b693dc44c381'),
+(163, 78, 'show_banner', '1'),
+(164, 78, '_show_banner', 'field_5aeb88e804596'),
+(165, 78, 'banner_type', 'image-static'),
+(166, 78, '_banner_type', 'field_5aeb898437746'),
+(167, 78, 'banner_image', '71'),
+(168, 78, '_banner_image', 'field_5aeb8a0a37747'),
+(169, 78, 'banner_content', '<h1 style=\"text-align: center;\">we build\r\ngreat teams.</h1>\r\n<h2 style=\"text-align: center;\">Team Building &amp; corporate events</h2>'),
+(170, 78, '_banner_content', 'field_5aeb8ab437750'),
+(171, 78, 'content_reusable_blocks', ''),
+(172, 78, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(173, 78, 'sidebar_reusable_block', ''),
+(174, 78, '_sidebar_reusable_block', 'field_5b66670dd52b7'),
+(175, 78, 'title_bar_background', '#003399'),
+(176, 78, '_title_bar_background', 'field_5b693dc44c381'),
+(177, 78, 'content_link', ''),
+(178, 78, '_content_link', 'field_5b693de54c383'),
+(179, 78, 'post_category', ''),
+(180, 78, '_post_category', 'field_5b6b92b6e11c6'),
+(181, 78, 'button_type', 'default'),
+(182, 78, '_button_type', 'field_5b73f436467fa'),
+(183, 78, 'button_text', ''),
+(184, 78, '_button_text', 'field_5b73f48c467fb'),
+(185, 78, 'button_url', ''),
+(186, 78, '_button_url', 'field_5b73f4ae467fc'),
+(187, 78, 'banner_background_color', '#00C1FF'),
+(188, 78, '_banner_background_color', 'field_5b693dc44c381'),
+(189, 79, 'show_banner', '1'),
+(190, 79, '_show_banner', 'field_5aeb88e804596'),
+(191, 79, 'banner_type', 'image-static'),
+(192, 79, '_banner_type', 'field_5aeb898437746'),
+(193, 79, 'banner_image', '71'),
+(194, 79, '_banner_image', 'field_5aeb8a0a37747'),
+(195, 79, 'banner_content', '<h1>we build\r\ngreat teams.</h1>\r\n<h2>Team Building &amp; corporate events</h2>'),
+(196, 79, '_banner_content', 'field_5aeb8ab437750'),
+(197, 79, 'content_reusable_blocks', ''),
+(198, 79, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(199, 79, 'sidebar_reusable_block', ''),
+(200, 79, '_sidebar_reusable_block', 'field_5b66670dd52b7'),
+(201, 79, 'title_bar_background', '#003399'),
+(202, 79, '_title_bar_background', 'field_5b693dc44c381'),
+(203, 79, 'content_link', ''),
+(204, 79, '_content_link', 'field_5b693de54c383'),
+(205, 79, 'post_category', ''),
+(206, 79, '_post_category', 'field_5b6b92b6e11c6'),
+(207, 79, 'button_type', 'default'),
+(208, 79, '_button_type', 'field_5b73f436467fa'),
+(209, 79, 'button_text', ''),
+(210, 79, '_button_text', 'field_5b73f48c467fb'),
+(211, 79, 'button_url', ''),
+(212, 79, '_button_url', 'field_5b73f4ae467fc'),
+(213, 79, 'banner_background_color', '#00C1FF'),
+(214, 79, '_banner_background_color', 'field_5b693dc44c381'),
+(215, 2, 'video_url', 'whZNYPldMEY'),
+(216, 2, '_video_url', 'field_5b73f4c2467fd'),
+(217, 80, 'show_banner', '1'),
+(218, 80, '_show_banner', 'field_5aeb88e804596'),
+(219, 80, 'banner_type', 'image-static'),
+(220, 80, '_banner_type', 'field_5aeb898437746'),
+(221, 80, 'banner_image', '71'),
+(222, 80, '_banner_image', 'field_5aeb8a0a37747'),
+(223, 80, 'banner_content', '<h1>we build\r\ngreat teams.</h1>\r\n<h2>Team Building &amp; corporate events</h2>'),
+(224, 80, '_banner_content', 'field_5aeb8ab437750'),
+(225, 80, 'content_reusable_blocks', ''),
+(226, 80, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(227, 80, 'sidebar_reusable_block', ''),
+(228, 80, '_sidebar_reusable_block', 'field_5b66670dd52b7'),
+(229, 80, 'title_bar_background', '#003399'),
+(230, 80, '_title_bar_background', 'field_5b693dc44c381'),
+(231, 80, 'content_link', ''),
+(232, 80, '_content_link', 'field_5b693de54c383'),
+(233, 80, 'post_category', ''),
+(234, 80, '_post_category', 'field_5b6b92b6e11c6'),
+(235, 80, 'button_type', 'Video'),
+(236, 80, '_button_type', 'field_5b73f436467fa'),
+(237, 80, 'button_text', ''),
+(238, 80, '_button_text', 'field_5b73f48c467fb'),
+(239, 80, 'button_url', ''),
+(240, 80, '_button_url', 'field_5b73f4ae467fc'),
+(241, 80, 'banner_background_color', '#00C1FF'),
+(242, 80, '_banner_background_color', 'field_5b693dc44c381'),
+(243, 80, 'video_url', 'whZNYPldMEY'),
+(244, 80, '_video_url', 'field_5b73f4c2467fd'),
+(245, 81, '_menu_item_type', 'post_type'),
+(246, 81, '_menu_item_menu_item_parent', '0'),
+(247, 81, '_menu_item_object_id', '15'),
+(248, 81, '_menu_item_object', 'page'),
+(249, 81, '_menu_item_target', ''),
+(250, 81, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(251, 81, '_menu_item_xfn', ''),
+(252, 81, '_menu_item_url', ''),
+(254, 82, '_menu_item_type', 'post_type'),
+(255, 82, '_menu_item_menu_item_parent', '0'),
+(256, 82, '_menu_item_object_id', '13'),
+(257, 82, '_menu_item_object', 'page'),
+(258, 82, '_menu_item_target', ''),
+(259, 82, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(260, 82, '_menu_item_xfn', ''),
+(261, 82, '_menu_item_url', ''),
+(263, 83, '_menu_item_type', 'post_type'),
+(264, 83, '_menu_item_menu_item_parent', '0'),
+(265, 83, '_menu_item_object_id', '11'),
+(266, 83, '_menu_item_object', 'page'),
+(267, 83, '_menu_item_target', ''),
+(268, 83, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(269, 83, '_menu_item_xfn', ''),
+(270, 83, '_menu_item_url', ''),
+(272, 84, '_menu_item_type', 'post_type'),
+(273, 84, '_menu_item_menu_item_parent', '0'),
+(274, 84, '_menu_item_object_id', '9'),
+(275, 84, '_menu_item_object', 'page'),
+(276, 84, '_menu_item_target', ''),
+(277, 84, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(278, 84, '_menu_item_xfn', ''),
+(279, 84, '_menu_item_url', ''),
+(281, 85, '_menu_item_type', 'post_type'),
+(282, 85, '_menu_item_menu_item_parent', '0'),
+(283, 85, '_menu_item_object_id', '3'),
+(284, 85, '_menu_item_object', 'page'),
+(285, 85, '_menu_item_target', ''),
+(286, 85, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(287, 85, '_menu_item_xfn', ''),
+(288, 85, '_menu_item_url', ''),
+(289, 85, '_menu_item_orphaned', '1534327728'),
+(290, 86, '_menu_item_type', 'post_type'),
+(291, 86, '_menu_item_menu_item_parent', '0'),
+(292, 86, '_menu_item_object_id', '2'),
+(293, 86, '_menu_item_object', 'page'),
+(294, 86, '_menu_item_target', ''),
+(295, 86, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(296, 86, '_menu_item_xfn', ''),
+(297, 86, '_menu_item_url', ''),
+(298, 86, '_menu_item_orphaned', '1534327729'),
+(299, 87, '_edit_last', '1'),
+(300, 87, '_wp_page_template', 'default'),
+(309, 87, 'show_banner', '0'),
+(310, 87, '_show_banner', 'field_5aeb88e804596'),
+(311, 87, 'button_type', 'default'),
+(312, 87, '_button_type', 'field_5b73f436467fa'),
+(313, 87, 'button_text', ''),
+(314, 87, '_button_text', 'field_5b73f48c467fb'),
+(315, 87, 'button_url', ''),
+(316, 87, '_button_url', 'field_5b73f4ae467fc'),
+(317, 87, 'content_reusable_blocks', ''),
+(318, 87, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(319, 89, 'show_banner', '0'),
+(320, 89, '_show_banner', 'field_5aeb88e804596'),
+(321, 89, 'button_type', 'default'),
+(322, 89, '_button_type', 'field_5b73f436467fa'),
+(323, 89, 'button_text', ''),
+(324, 89, '_button_text', 'field_5b73f48c467fb'),
+(325, 89, 'button_url', ''),
+(326, 89, '_button_url', 'field_5b73f4ae467fc'),
+(327, 89, 'content_reusable_blocks', ''),
+(328, 89, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(329, 87, '_edit_lock', '1534327637:1'),
+(330, 90, '_wp_page_template', 'default'),
+(332, 90, '_dp_original', '13'),
+(333, 90, '_edit_lock', '1534331277:1'),
+(334, 90, '_edit_last', '1'),
+(335, 90, 'show_banner', '0'),
+(336, 90, '_show_banner', 'field_5aeb88e804596'),
+(337, 90, 'banner_content', ''),
+(338, 90, '_banner_content', 'field_5aeb8ab437750'),
+(339, 90, 'button_type', 'default'),
+(340, 90, '_button_type', 'field_5b73f436467fa'),
+(341, 90, 'button_text', ''),
+(342, 90, '_button_text', 'field_5b73f48c467fb'),
+(343, 90, 'button_url', ''),
+(344, 90, '_button_url', 'field_5b73f4ae467fc'),
+(345, 90, 'content_reusable_blocks', ''),
+(346, 90, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(347, 91, 'show_banner', '0'),
+(348, 91, '_show_banner', 'field_5aeb88e804596'),
+(349, 91, 'banner_content', ''),
+(350, 91, '_banner_content', 'field_5aeb8ab437750'),
+(351, 91, 'button_type', 'default'),
+(352, 91, '_button_type', 'field_5b73f436467fa'),
+(353, 91, 'button_text', ''),
+(354, 91, '_button_text', 'field_5b73f48c467fb'),
+(355, 91, 'button_url', ''),
+(356, 91, '_button_url', 'field_5b73f4ae467fc'),
+(357, 91, 'content_reusable_blocks', ''),
+(358, 91, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(359, 92, '_wp_page_template', 'default'),
+(361, 92, 'show_banner', '0'),
+(362, 92, '_show_banner', 'field_5aeb88e804596'),
+(363, 92, 'banner_content', ''),
+(364, 92, '_banner_content', 'field_5aeb8ab437750'),
+(365, 92, 'button_type', 'default'),
+(366, 92, '_button_type', 'field_5b73f436467fa'),
+(367, 92, 'button_text', ''),
+(368, 92, '_button_text', 'field_5b73f48c467fb'),
+(369, 92, 'button_url', ''),
+(370, 92, '_button_url', 'field_5b73f4ae467fc'),
+(371, 92, 'content_reusable_blocks', ''),
+(372, 92, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(373, 92, '_dp_original', '90'),
+(374, 92, '_edit_lock', '1534331430:1'),
+(375, 92, '_edit_last', '1'),
+(376, 93, 'show_banner', '0'),
+(377, 93, '_show_banner', 'field_5aeb88e804596'),
+(378, 93, 'banner_content', ''),
+(379, 93, '_banner_content', 'field_5aeb8ab437750'),
+(380, 93, 'button_type', 'default'),
+(381, 93, '_button_type', 'field_5b73f436467fa'),
+(382, 93, 'button_text', ''),
+(383, 93, '_button_text', 'field_5b73f48c467fb'),
+(384, 93, 'button_url', ''),
+(385, 93, '_button_url', 'field_5b73f4ae467fc'),
+(386, 93, 'content_reusable_blocks', ''),
+(387, 93, '_content_reusable_blocks', 'field_5b66641b8c4b0'),
+(388, 94, '_menu_item_type', 'post_type'),
+(389, 94, '_menu_item_menu_item_parent', '82'),
+(390, 94, '_menu_item_object_id', '92'),
+(391, 94, '_menu_item_object', 'page'),
+(392, 94, '_menu_item_target', ''),
+(393, 94, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(394, 94, '_menu_item_xfn', ''),
+(395, 94, '_menu_item_url', ''),
+(397, 95, '_menu_item_type', 'post_type'),
+(398, 95, '_menu_item_menu_item_parent', '82'),
+(399, 95, '_menu_item_object_id', '90'),
+(400, 95, '_menu_item_object', 'page'),
+(401, 95, '_menu_item_target', ''),
+(402, 95, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(403, 95, '_menu_item_xfn', ''),
+(404, 95, '_menu_item_url', ''),
+(406, 96, '_menu_item_type', 'post_type'),
+(407, 96, '_menu_item_menu_item_parent', '0'),
+(408, 96, '_menu_item_object_id', '87'),
+(409, 96, '_menu_item_object', 'page'),
+(410, 96, '_menu_item_target', ''),
+(411, 96, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(412, 96, '_menu_item_xfn', ''),
+(413, 96, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
@@ -450,7 +739,7 @@ CREATE TABLE `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2018-08-15 02:33:48', '2018-08-15 02:33:48', '<h1>General Content Title (h1)</h1>\r\n<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra lobortis viverra. Proin at leo in sem porttitor a in orci. Sed lacinia odio vitae erat fermentum ligula mattis. (h2)</h2>\r\n<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h3)</h3>\r\n<div>\r\n\r\nIn viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci. Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis. Fusce interdum ultricies eros a consequat. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo. Maecenas sodales mauris at faucibus interdum. Maecenas lobortis eros ac consequat laoreet.\r\n\r\nCurabitur pretium consequat tristique. Sed laoreet massa ac placerat luctus. Nam interdum ex id diam lobortis efficitur. In efficitur diam vel velit cursus, nec interdum orci faucibus. Pellentesque orci dui, elementum non est in, condimentum fringilla magna. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo.\r\n<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h4)</h4>\r\n<ul>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ul>\r\n<ol>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ol>\r\n</div>', 'Hello world!', '', 'publish', 'open', 'open', '', 'hello-world', '', '', '2018-08-15 06:55:02', '2018-08-15 06:55:02', '', 0, 'http://grupo.loc:802/?p=1', 0, 'post', '', 1),
-(2, 1, '2018-08-15 02:33:48', '2018-08-15 02:33:48', '', 'Home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2018-08-15 03:24:07', '2018-08-15 03:24:07', '', 0, 'http://grupo.loc:802/?page_id=2', 0, 'page', '', 0),
+(2, 1, '2018-08-15 02:33:48', '2018-08-15 02:33:48', '', 'Home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2018-08-15 09:49:15', '2018-08-15 09:49:15', '', 0, 'http://grupo.loc:802/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2018-08-15 02:33:48', '2018-08-15 02:33:48', '', 'Privacy Policy', '', 'publish', 'closed', 'open', '', 'privacy-policy', '', '', '2018-08-15 03:23:17', '2018-08-15 03:23:17', '', 0, 'http://grupo.loc:802/?page_id=3', 0, 'page', '', 0),
 (4, 1, '2018-08-15 02:34:00', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2018-08-15 02:34:00', '0000-00-00 00:00:00', '', 0, 'http://grupo.loc:802/?p=4', 0, 'post', '', 0),
 (5, 1, '2018-08-15 02:36:43', '2018-08-15 02:36:43', '<label> Your Name (required)\r\n    [text* your-name] </label>\r\n\r\n<label> Your Email (required)\r\n    [email* your-email] </label>\r\n\r\n<label> Subject\r\n    [text your-subject] </label>\r\n\r\n<label> Your Message\r\n    [textarea your-message] </label>\r\n\r\n[submit \"Send\"]\nGrupo \"[your-subject]\"\n[your-name] <wordpress@grupo.loc>\nFrom: [your-name] <[your-email]>\nSubject: [your-subject]\n\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Grupo (http://grupo.loc:802)\ntest@gmail.com\nReply-To: [your-email]\n\n0\n0\n\nGrupo \"[your-subject]\"\nGrupo <wordpress@grupo.loc>\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Grupo (http://grupo.loc:802)\n[your-email]\nReply-To: test@gmail.com\n\n0\n0\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2018-08-15 02:36:43', '2018-08-15 02:36:43', '', 0, 'http://grupo.loc:802/?post_type=wpcf7_contact_form&p=5', 0, 'wpcf7_contact_form', '', 0),
@@ -470,27 +759,14 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (19, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:8:\"repeater\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"collapsed\";s:0:\"\";s:3:\"min\";i:0;s:3:\"max\";i:0;s:6:\"layout\";s:5:\"block\";s:12:\"button_label\";s:0:\"\";}', 'Maps', 'maps', 'trash', 'closed', 'closed', '', 'field_5b6bc4cb50f08__trashed', '', '', '2018-08-15 03:40:29', '2018-08-15 03:40:29', '', 18, 'http://grupo.loc:802/?post_type=acf-field&#038;p=19', 0, 'acf-field', '', 0),
 (20, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:9:{s:4:\"type\";s:10:\"google_map\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:10:\"center_lat\";s:0:\"\";s:10:\"center_lng\";s:0:\"\";s:4:\"zoom\";s:0:\"\";s:6:\"height\";s:0:\"\";}', 'Location', 'location', 'publish', 'closed', 'closed', '', 'field_5b6bc6c650f0a', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 19, 'http://grupo.loc:802/?post_type=acf-field&p=20', 0, 'acf-field', '', 0),
 (21, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:4:\"tabs\";s:3:\"all\";s:7:\"toolbar\";s:4:\"full\";s:12:\"media_upload\";i:0;s:5:\"delay\";i:0;}', 'Contact Info', 'contact_info', 'publish', 'closed', 'closed', '', 'field_5b6bc69b50f09', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 19, 'http://grupo.loc:802/?post_type=acf-field&p=21', 1, 'acf-field', '', 0),
-(22, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:8:{s:8:\"location\";a:2:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:4:\"page\";}}i:1;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:4:\"post\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";s:0:\"\";s:11:\"description\";s:0:\"\";s:5:\"local\";s:3:\"php\";}', 'Page Setup', 'page-setup', 'publish', 'closed', 'closed', '', 'group_5aeb8048cab83', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 0, 'http://grupo.loc:802/?post_type=acf-field-group&p=22', 0, 'acf-field-group', '', 0),
+(22, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:8:\"location\";a:2:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:4:\"page\";}}i:1;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:4:\"post\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";s:0:\"\";s:11:\"description\";s:0:\"\";}', 'Page Setup', 'page-setup', 'publish', 'closed', 'closed', '', 'group_5aeb8048cab83', '', '', '2018-08-15 09:44:54', '2018-08-15 09:44:54', '', 0, 'http://grupo.loc:802/?post_type=acf-field-group&#038;p=22', 0, 'acf-field-group', '', 0),
 (23, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Banner Setup', '', 'publish', 'closed', 'closed', '', 'field_5aeb890b04597', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=23', 0, 'acf-field', '', 0),
 (24, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:12:{s:4:\"type\";s:5:\"radio\";s:12:\"instructions\";s:53:\"Whether to display an image/slider banner on the page\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:2:{i:0;s:2:\"No\";i:1;s:3:\"Yes\";}s:10:\"allow_null\";i:0;s:12:\"other_choice\";i:0;s:17:\"save_other_choice\";i:0;s:13:\"default_value\";i:0;s:6:\"layout\";s:10:\"horizontal\";s:13:\"return_format\";s:5:\"value\";}', 'Show Banner', 'show_banner', 'publish', 'closed', 'closed', '', 'field_5aeb88e804596', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=24', 1, 'acf-field', '', 0),
-(25, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:13:{s:4:\"type\";s:6:\"select\";s:12:\"instructions\";s:36:\"Choose the type of banner to display\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:2:{s:12:\"image-static\";s:13:\"Static banner\";s:12:\"image-slider\";s:13:\"Slider banner\";}s:13:\"default_value\";a:1:{i:0;s:14:\"image-standard\";}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:0;s:2:\"ui\";i:0;s:4:\"ajax\";i:0;s:13:\"return_format\";s:5:\"value\";s:11:\"placeholder\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}}}}', 'Banner Type', 'banner_type', 'publish', 'closed', 'closed', '', 'field_5aeb898437746', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=25', 2, 'acf-field', '', 0),
-(26, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:15:{s:4:\"type\";s:5:\"image\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"return_format\";s:2:\"id\";s:12:\"preview_size\";s:9:\"thumbnail\";s:7:\"library\";s:3:\"all\";s:9:\"min_width\";s:0:\"\";s:10:\"min_height\";s:0:\"\";s:8:\"min_size\";s:0:\"\";s:9:\"max_width\";s:0:\"\";s:10:\"max_height\";s:0:\"\";s:8:\"max_size\";s:0:\"\";s:10:\"mime_types\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:2:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}i:1;a:3:{s:5:\"field\";s:19:\"field_5aeb898437746\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:12:\"image-static\";}}}}', 'Banner Image', 'banner_image', 'publish', 'closed', 'closed', '', 'field_5aeb8a0a37747', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=26', 3, 'acf-field', '', 0),
-(27, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:4:\"tabs\";s:3:\"all\";s:7:\"toolbar\";s:4:\"full\";s:12:\"media_upload\";i:1;s:5:\"delay\";i:0;s:17:\"conditional_logic\";a:1:{i:0;a:2:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb898437746\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:12:\"image-static\";}i:1;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}}}}', 'Banner Content', 'banner_content', 'publish', 'closed', 'closed', '', 'field_5aeb8ab437750', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=27', 4, 'acf-field', '', 0),
-(28, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:8:\"repeater\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"collapsed\";s:0:\"\";s:3:\"min\";i:0;s:3:\"max\";i:0;s:6:\"layout\";s:3:\"row\";s:12:\"button_label\";s:9:\"Add Slide\";s:17:\"conditional_logic\";a:1:{i:0;a:2:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}i:1;a:3:{s:5:\"field\";s:19:\"field_5aeb898437746\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:12:\"image-slider\";}}}}', 'Banner Slider', 'banner_slider', 'publish', 'closed', 'closed', '', 'field_5b028ea98eb24', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=28', 5, 'acf-field', '', 0),
-(29, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:15:{s:4:\"type\";s:5:\"image\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"return_format\";s:2:\"id\";s:12:\"preview_size\";s:9:\"thumbnail\";s:7:\"library\";s:3:\"all\";s:9:\"min_width\";s:0:\"\";s:10:\"min_height\";s:0:\"\";s:8:\"min_size\";s:0:\"\";s:9:\"max_width\";s:0:\"\";s:10:\"max_height\";s:0:\"\";s:8:\"max_size\";s:0:\"\";s:10:\"mime_types\";s:0:\"\";}', 'Slide Image', 'slide_image', 'publish', 'closed', 'closed', '', 'field_5b028eea8eb26', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 28, 'http://grupo.loc:802/?post_type=acf-field&p=29', 0, 'acf-field', '', 0),
-(30, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:4:\"tabs\";s:3:\"all\";s:7:\"toolbar\";s:4:\"full\";s:12:\"media_upload\";i:1;s:5:\"delay\";i:0;}', 'Slide Content', 'slide_content', 'publish', 'closed', 'closed', '', 'field_5b028eff8eb27', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 28, 'http://grupo.loc:802/?post_type=acf-field&p=30', 1, 'acf-field', '', 0),
-(31, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:12:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:10:\"Learn More\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:8:\"readonly\";i:0;s:8:\"disabled\";i:0;}', 'Button Text', 'button_text', 'publish', 'closed', 'closed', '', 'field_5b03c63f73348', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 28, 'http://grupo.loc:802/?post_type=acf-field&p=31', 2, 'acf-field', '', 0),
-(32, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Button URL', 'button_url', 'publish', 'closed', 'closed', '', 'field_5b03c67173349', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 28, 'http://grupo.loc:802/?post_type=acf-field&p=32', 3, 'acf-field', '', 0),
-(33, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Content Blocks', '', 'publish', 'closed', 'closed', '', 'field_5b658e148fb3d', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=33', 6, 'acf-field', '', 0),
-(34, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:11:{s:4:\"type\";s:11:\"post_object\";s:12:\"instructions\";s:38:\"Select and arrange blocks for content.\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"post_type\";a:1:{i:0;s:14:\"reusable-block\";}s:8:\"taxonomy\";a:1:{i:0;s:26:\"reusable-block-cat:content\";}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:1;s:13:\"return_format\";s:2:\"id\";s:2:\"ui\";i:1;}', 'Content Reusable Blocks', 'content_reusable_blocks', 'publish', 'closed', 'closed', '', 'field_5b66641b8c4b0', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=34', 7, 'acf-field', '', 0),
-(35, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Sidebar Blocks', '', 'publish', 'closed', 'closed', '', 'field_5b665e418d092', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=35', 8, 'acf-field', '', 0),
-(36, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:11:{s:4:\"type\";s:11:\"post_object\";s:12:\"instructions\";s:38:\"Select and arrange blocks for sidebar.\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"post_type\";a:1:{i:0;s:14:\"reusable-block\";}s:8:\"taxonomy\";a:1:{i:0;s:26:\"reusable-block-cat:sidebar\";}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:1;s:13:\"return_format\";s:2:\"id\";s:2:\"ui\";i:1;}', 'Sidebar Reusable Block', 'sidebar_reusable_block', 'publish', 'closed', 'closed', '', 'field_5b66670dd52b7', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=36', 9, 'acf-field', '', 0),
-(37, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Color Scheme', '', 'publish', 'closed', 'closed', '', 'field_5b693daf4c380', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=37', 10, 'acf-field', '', 0),
-(38, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:6:{s:4:\"type\";s:12:\"color_picker\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:7:\"#003399\";}', 'Title Bar Background', 'title_bar_background', 'publish', 'closed', 'closed', '', 'field_5b693dc44c381', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=38', 11, 'acf-field', '', 0),
-(39, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Content Link', '', 'publish', 'closed', 'closed', '', 'field_5b693dd94c382', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=39', 12, 'acf-field', '', 0),
-(40, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:38:\"This will show under the main content.\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:4:\"tabs\";s:3:\"all\";s:7:\"toolbar\";s:5:\"basic\";s:12:\"media_upload\";i:0;s:5:\"delay\";i:0;}', 'Content Link', 'content_link', 'publish', 'closed', 'closed', '', 'field_5b693de54c383', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=40', 13, 'acf-field', '', 0),
-(41, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Category List', '', 'publish', 'closed', 'closed', '', 'field_5b6b9243e11c5', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=41', 14, 'acf-field', '', 0),
-(42, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:13:{s:4:\"type\";s:8:\"taxonomy\";s:12:\"instructions\";s:88:\"Select post category for listing, for this to work, select DFP Listing as page template.\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:8:\"taxonomy\";s:8:\"category\";s:10:\"field_type\";s:6:\"select\";s:10:\"allow_null\";i:1;s:8:\"add_term\";i:1;s:10:\"save_terms\";i:0;s:10:\"load_terms\";i:0;s:13:\"return_format\";s:2:\"id\";s:8:\"multiple\";i:0;}', 'Post Category', 'post_category', 'publish', 'closed', 'closed', '', 'field_5b6b92b6e11c6', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=42', 15, 'acf-field', '', 0),
+(26, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:15:{s:4:\"type\";s:5:\"image\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"return_format\";s:2:\"id\";s:12:\"preview_size\";s:9:\"thumbnail\";s:7:\"library\";s:3:\"all\";s:9:\"min_width\";s:0:\"\";s:10:\"min_height\";s:0:\"\";s:8:\"min_size\";s:0:\"\";s:9:\"max_width\";s:0:\"\";s:10:\"max_height\";s:0:\"\";s:8:\"max_size\";s:0:\"\";s:10:\"mime_types\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}}}}', 'Banner Image', 'banner_image', 'publish', 'closed', 'closed', '', 'field_5aeb8a0a37747', '', '', '2018-08-15 09:42:02', '2018-08-15 09:42:02', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=26', 7, 'acf-field', '', 0),
+(27, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:10:{s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:4:\"tabs\";s:3:\"all\";s:7:\"toolbar\";s:4:\"full\";s:12:\"media_upload\";i:1;s:5:\"delay\";i:0;s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}}}}', 'Banner Content', 'banner_content', 'publish', 'closed', 'closed', '', 'field_5aeb8ab437750', '', '', '2018-08-15 09:33:11', '2018-08-15 09:33:11', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=27', 2, 'acf-field', '', 0),
+(33, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:7:{s:4:\"type\";s:3:\"tab\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"placement\";s:3:\"top\";s:8:\"endpoint\";i:0;}', 'Content Blocks', '', 'publish', 'closed', 'closed', '', 'field_5b658e148fb3d', '', '', '2018-08-15 09:42:02', '2018-08-15 09:42:02', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=33', 9, 'acf-field', '', 0),
+(34, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:11:{s:4:\"type\";s:11:\"post_object\";s:12:\"instructions\";s:38:\"Select and arrange blocks for content.\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"post_type\";a:1:{i:0;s:14:\"reusable-block\";}s:8:\"taxonomy\";a:1:{i:0;s:26:\"reusable-block-cat:content\";}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:1;s:13:\"return_format\";s:2:\"id\";s:2:\"ui\";i:1;}', 'Content Reusable Blocks', 'content_reusable_blocks', 'publish', 'closed', 'closed', '', 'field_5b66641b8c4b0', '', '', '2018-08-15 09:42:02', '2018-08-15 09:42:02', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=34', 10, 'acf-field', '', 0),
+(38, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:6:{s:4:\"type\";s:12:\"color_picker\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:7:\"#00C1FF\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5aeb88e804596\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:1:\"1\";}}}}', 'Banner Background Color', 'banner_background_color', 'publish', 'closed', 'closed', '', 'field_5b693dc44c381', '', '', '2018-08-15 09:42:02', '2018-08-15 09:42:02', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=38', 8, 'acf-field', '', 0),
 (43, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:8:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:14:\"reusable-block\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";s:0:\"\";s:11:\"description\";s:0:\"\";s:5:\"local\";s:3:\"php\";}', 'Reusable Block Setup', 'reusable-block-setup', 'publish', 'closed', 'closed', '', 'group_5b6667bbaa4e2', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 0, 'http://grupo.loc:802/?post_type=acf-field-group&p=43', 0, 'acf-field-group', '', 0),
 (44, 1, '2018-08-15 03:37:23', '2018-08-15 03:37:23', 'a:13:{s:4:\"type\";s:6:\"select\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:6:{s:16:\"standard-content\";s:16:\"Standard Content\";s:13:\"image-gallery\";s:13:\"Image Gallery\";s:13:\"contacts-list\";s:13:\"Contacts List\";s:18:\"latest-post-signup\";s:20:\"Latest Post & Signup\";s:9:\"page-grid\";s:9:\"Page Grid\";s:9:\"cta-block\";s:14:\"Call to Action\";}s:13:\"default_value\";a:0:{}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:0;s:2:\"ui\";i:0;s:4:\"ajax\";i:0;s:13:\"return_format\";s:5:\"value\";s:11:\"placeholder\";s:0:\"\";}', 'Reusable Block Setup', 'reusable_block_setup', 'publish', 'closed', 'closed', '', 'field_5b6667cc75b3a', '', '', '2018-08-15 03:37:23', '2018-08-15 03:37:23', '', 43, 'http://grupo.loc:802/?post_type=acf-field&p=44', 0, 'acf-field', '', 0),
 (45, 1, '2018-08-15 03:37:24', '2018-08-15 03:37:24', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Class', 'class', 'publish', 'closed', 'closed', '', 'field_5b68edd816c73', '', '', '2018-08-15 03:37:24', '2018-08-15 03:37:24', '', 43, 'http://grupo.loc:802/?post_type=acf-field&p=45', 1, 'acf-field', '', 0),
@@ -518,7 +794,32 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (67, 1, '2018-08-15 06:51:02', '2018-08-15 06:51:02', '<strong>Welcome to WordPress. </strong>\r\n\r\nThis is your first post. Edit or delete it, then start writing!', 'Hello world!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2018-08-15 06:51:02', '2018-08-15 06:51:02', '', 1, 'http://grupo.loc:802/2018/08/15/1-revision-v1/', 0, 'revision', '', 0),
 (68, 1, '2018-08-15 06:53:12', '2018-08-15 06:53:12', '<strong>Welcome to WordPress. </strong>\r\n<div>\r\n\r\nIn viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci. Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis. Fusce interdum ultricies eros a consequat. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo. Maecenas sodales mauris at faucibus interdum. Maecenas lobortis eros ac consequat laoreet.\r\n\r\nCurabitur pretium consequat tristique. Sed laoreet massa ac placerat luctus. Nam interdum ex id diam lobortis efficitur. In efficitur diam vel velit cursus, nec interdum orci faucibus. Pellentesque orci dui, elementum non est in, condimentum fringilla magna. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo.\r\n\r\n</div>', 'Hello world!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2018-08-15 06:53:12', '2018-08-15 06:53:12', '', 1, 'http://grupo.loc:802/2018/08/15/1-revision-v1/', 0, 'revision', '', 0),
 (69, 1, '2018-08-15 06:54:15', '2018-08-15 06:54:15', '<h1>General Content Title (h1)</h1>\n<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra lobortis viverra. Proin at leo in sem porttitor a in orci. Sed lacinia odio vitae erat fermentum ligula mattis. (h2)</h2>\n<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h3)</h3>\n<div>\n\nIn viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci. Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis. Fusce interdum ultricies eros a consequat. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo. Maecenas sodales mauris at faucibus interdum. Maecenas lobortis eros ac consequat laoreet.\n\nCurabitur pretium consequat tristique. Sed laoreet massa ac placerat luctus. Nam interdum ex id diam lobortis efficitur. In efficitur diam vel velit cursus, nec interdum orci faucibus. Pellentesque orci dui, elementum non est in, condimentum fringilla magna. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo.\n<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h4)</h4>\n&nbsp;\n\n</div>', 'Hello world!', '', 'inherit', 'closed', 'closed', '', '1-autosave-v1', '', '', '2018-08-15 06:54:15', '2018-08-15 06:54:15', '', 1, 'http://grupo.loc:802/2018/08/15/1-autosave-v1/', 0, 'revision', '', 0),
-(70, 1, '2018-08-15 06:55:02', '2018-08-15 06:55:02', '<h1>General Content Title (h1)</h1>\r\n<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra lobortis viverra. Proin at leo in sem porttitor a in orci. Sed lacinia odio vitae erat fermentum ligula mattis. (h2)</h2>\r\n<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h3)</h3>\r\n<div>\r\n\r\nIn viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci. Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis. Fusce interdum ultricies eros a consequat. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo. Maecenas sodales mauris at faucibus interdum. Maecenas lobortis eros ac consequat laoreet.\r\n\r\nCurabitur pretium consequat tristique. Sed laoreet massa ac placerat luctus. Nam interdum ex id diam lobortis efficitur. In efficitur diam vel velit cursus, nec interdum orci faucibus. Pellentesque orci dui, elementum non est in, condimentum fringilla magna. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo.\r\n<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h4)</h4>\r\n<ul>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ul>\r\n<ol>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ol>\r\n</div>', 'Hello world!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2018-08-15 06:55:02', '2018-08-15 06:55:02', '', 1, 'http://grupo.loc:802/2018/08/15/1-revision-v1/', 0, 'revision', '', 0);
+(70, 1, '2018-08-15 06:55:02', '2018-08-15 06:55:02', '<h1>General Content Title (h1)</h1>\r\n<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra lobortis viverra. Proin at leo in sem porttitor a in orci. Sed lacinia odio vitae erat fermentum ligula mattis. (h2)</h2>\r\n<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h3)</h3>\r\n<div>\r\n\r\nIn viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci. Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis. Fusce interdum ultricies eros a consequat. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo. Maecenas sodales mauris at faucibus interdum. Maecenas lobortis eros ac consequat laoreet.\r\n\r\nCurabitur pretium consequat tristique. Sed laoreet massa ac placerat luctus. Nam interdum ex id diam lobortis efficitur. In efficitur diam vel velit cursus, nec interdum orci faucibus. Pellentesque orci dui, elementum non est in, condimentum fringilla magna. Aenean quis euismod nisl, eget laoreet massa. Nulla eget risus nibh. Integer auctor, lacus eget semper pretium, lectus odio pellentesque ante, quis consectetur ex odio a leo.\r\n<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (h4)</h4>\r\n<ul>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ul>\r\n<ol>\r\n 	<li>In viverra lobortis viverra. Proin at leo in sem accumsan porttitor a in orci.</li>\r\n 	<li>Sed lacinia odio vitae erat malesuada, eget fermentum ligula mattis.</li>\r\n 	<li>Fusce interdum ultricies eros a consequat.</li>\r\n 	<li>Aenean quis euismod nisl, eget laoreet massa.</li>\r\n 	<li>Nulla eget risus nibh. Integer auctor, lacus pellentesque ante, quis ex odio a leo.</li>\r\n 	<li>Maecenas sodales mauris at faucibus interdum.</li>\r\n</ol>\r\n</div>', 'Hello world!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2018-08-15 06:55:02', '2018-08-15 06:55:02', '', 1, 'http://grupo.loc:802/2018/08/15/1-revision-v1/', 0, 'revision', '', 0),
+(71, 1, '2018-08-15 09:26:43', '2018-08-15 09:26:43', '', 'Banner', '', 'inherit', 'open', 'closed', '', 'banner', '', '', '2018-08-15 09:26:43', '2018-08-15 09:26:43', '', 2, 'http://grupo.loc:802/wp-content/uploads/2018/08/Banner.jpg', 0, 'attachment', 'image/jpeg', 0),
+(72, 1, '2018-08-15 09:26:44', '2018-08-15 09:26:44', '', 'standard-image', '', 'inherit', 'open', 'closed', '', 'standard-image', '', '', '2018-08-15 09:26:44', '2018-08-15 09:26:44', '', 2, 'http://grupo.loc:802/wp-content/uploads/2018/08/standard-image.jpg', 0, 'attachment', 'image/jpeg', 0),
+(73, 1, '2018-08-15 09:28:21', '2018-08-15 09:28:21', '', 'Home', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2018-08-15 09:28:21', '2018-08-15 09:28:21', '', 2, 'http://grupo.loc:802/2018/08/15/2-revision-v1/', 0, 'revision', '', 0),
+(74, 1, '2018-08-15 09:42:01', '2018-08-15 09:42:01', 'a:13:{s:4:\"type\";s:6:\"select\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:3:{s:7:\"default\";s:7:\"Default\";s:5:\"share\";s:12:\"Share Button\";s:5:\"Video\";s:12:\"Video Button\";}s:13:\"default_value\";a:1:{i:0;s:7:\"default\";}s:10:\"allow_null\";i:0;s:8:\"multiple\";i:0;s:2:\"ui\";i:0;s:13:\"return_format\";s:5:\"value\";s:4:\"ajax\";i:0;s:11:\"placeholder\";s:0:\"\";}', 'Button Type', 'button_type', 'publish', 'closed', 'closed', '', 'field_5b73f436467fa', '', '', '2018-08-15 09:42:01', '2018-08-15 09:42:01', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=74', 3, 'acf-field', '', 0),
+(75, 1, '2018-08-15 09:42:01', '2018-08-15 09:42:01', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5b73f436467fa\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:7:\"default\";}}}}', 'Button Text', 'button_text', 'publish', 'closed', 'closed', '', 'field_5b73f48c467fb', '', '', '2018-08-15 09:42:01', '2018-08-15 09:42:01', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=75', 4, 'acf-field', '', 0),
+(76, 1, '2018-08-15 09:42:01', '2018-08-15 09:42:01', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5b73f436467fa\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:7:\"default\";}}}}', 'Button URL', 'button_url', 'publish', 'closed', 'closed', '', 'field_5b73f4ae467fc', '', '', '2018-08-15 09:42:01', '2018-08-15 09:42:01', '', 22, 'http://grupo.loc:802/?post_type=acf-field&p=76', 5, 'acf-field', '', 0),
+(77, 1, '2018-08-15 09:42:01', '2018-08-15 09:42:01', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:16:\"Youtube video ID\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5b73f436467fa\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:5:\"Video\";}}}}', 'Video URL', 'video_url', 'publish', 'closed', 'closed', '', 'field_5b73f4c2467fd', '', '', '2018-08-15 09:44:54', '2018-08-15 09:44:54', '', 22, 'http://grupo.loc:802/?post_type=acf-field&#038;p=77', 6, 'acf-field', '', 0),
+(78, 1, '2018-08-15 09:44:06', '2018-08-15 09:44:06', '', 'Home', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2018-08-15 09:44:06', '2018-08-15 09:44:06', '', 2, 'http://grupo.loc:802/2018/08/15/2-revision-v1/', 0, 'revision', '', 0),
+(79, 1, '2018-08-15 09:44:21', '2018-08-15 09:44:21', '', 'Home', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2018-08-15 09:44:21', '2018-08-15 09:44:21', '', 2, 'http://grupo.loc:802/2018/08/15/2-revision-v1/', 0, 'revision', '', 0),
+(80, 1, '2018-08-15 09:49:15', '2018-08-15 09:49:15', '', 'Home', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2018-08-15 09:49:15', '2018-08-15 09:49:15', '', 2, 'http://grupo.loc:802/2018/08/15/2-revision-v1/', 0, 'revision', '', 0),
+(81, 1, '2018-08-15 10:09:29', '2018-08-15 10:09:29', ' ', '', '', 'publish', 'closed', 'closed', '', '81', '', '', '2018-08-15 11:13:38', '2018-08-15 11:13:38', '', 0, 'http://grupo.loc:802/?p=81', 7, 'nav_menu_item', '', 0),
+(82, 1, '2018-08-15 10:09:28', '2018-08-15 10:09:28', ' ', '', '', 'publish', 'closed', 'closed', '', '82', '', '', '2018-08-15 11:13:38', '2018-08-15 11:13:38', '', 0, 'http://grupo.loc:802/?p=82', 4, 'nav_menu_item', '', 0),
+(83, 1, '2018-08-15 10:09:28', '2018-08-15 10:09:28', ' ', '', '', 'publish', 'closed', 'closed', '', '83', '', '', '2018-08-15 11:13:38', '2018-08-15 11:13:38', '', 0, 'http://grupo.loc:802/?p=83', 3, 'nav_menu_item', '', 0),
+(84, 1, '2018-08-15 10:09:28', '2018-08-15 10:09:28', ' ', '', '', 'publish', 'closed', 'closed', '', '84', '', '', '2018-08-15 11:13:37', '2018-08-15 11:13:37', '', 0, 'http://grupo.loc:802/?p=84', 1, 'nav_menu_item', '', 0),
+(85, 1, '2018-08-15 10:08:48', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2018-08-15 10:08:48', '0000-00-00 00:00:00', '', 0, 'http://grupo.loc:802/?p=85', 1, 'nav_menu_item', '', 0),
+(86, 1, '2018-08-15 10:08:48', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2018-08-15 10:08:48', '0000-00-00 00:00:00', '', 0, 'http://grupo.loc:802/?p=86', 1, 'nav_menu_item', '', 0),
+(87, 1, '2018-08-15 10:09:35', '2018-08-15 10:09:35', '', 'Blog', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2018-08-15 10:09:35', '2018-08-15 10:09:35', '', 0, 'http://grupo.loc:802/?page_id=87', 0, 'page', '', 0),
+(89, 1, '2018-08-15 10:09:35', '2018-08-15 10:09:35', '', 'Blog', '', 'inherit', 'closed', 'closed', '', '87-revision-v1', '', '', '2018-08-15 10:09:35', '2018-08-15 10:09:35', '', 87, 'http://grupo.loc:802/2018/08/15/87-revision-v1/', 0, 'revision', '', 0),
+(90, 1, '2018-08-15 11:10:15', '2018-08-15 11:10:15', '', 'Smart Team Building', '', 'publish', 'closed', 'closed', '', 'smart-team-building', '', '', '2018-08-15 11:10:15', '2018-08-15 11:10:15', '', 13, 'http://grupo.loc:802/?page_id=90', 0, 'page', '', 0),
+(91, 1, '2018-08-15 11:10:15', '2018-08-15 11:10:15', '', 'Smart Team Building', '', 'inherit', 'closed', 'closed', '', '90-revision-v1', '', '', '2018-08-15 11:10:15', '2018-08-15 11:10:15', '', 90, 'http://grupo.loc:802/2018/08/15/90-revision-v1/', 0, 'revision', '', 0),
+(92, 1, '2018-08-15 11:10:29', '2018-08-15 11:10:29', '', 'Outdoor Team Building', '', 'publish', 'closed', 'closed', '', 'outdoor-team-building', '', '', '2018-08-15 11:10:29', '2018-08-15 11:10:29', '', 13, 'http://grupo.loc:802/?page_id=92', 0, 'page', '', 0),
+(93, 1, '2018-08-15 11:10:29', '2018-08-15 11:10:29', '', 'Outdoor Team Building', '', 'inherit', 'closed', 'closed', '', '92-revision-v1', '', '', '2018-08-15 11:10:29', '2018-08-15 11:10:29', '', 92, 'http://grupo.loc:802/2018/08/15/92-revision-v1/', 0, 'revision', '', 0),
+(94, 1, '2018-08-15 11:10:52', '2018-08-15 11:10:52', ' ', '', '', 'publish', 'closed', 'closed', '', '94', '', '', '2018-08-15 11:13:38', '2018-08-15 11:13:38', '', 13, 'http://grupo.loc:802/?p=94', 5, 'nav_menu_item', '', 0),
+(95, 1, '2018-08-15 11:10:52', '2018-08-15 11:10:52', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2018-08-15 11:13:38', '2018-08-15 11:13:38', '', 13, 'http://grupo.loc:802/?p=95', 6, 'nav_menu_item', '', 0),
+(96, 1, '2018-08-15 11:13:37', '2018-08-15 11:13:37', ' ', '', '', 'publish', 'closed', 'closed', '', '96', '', '', '2018-08-15 11:13:37', '2018-08-15 11:13:37', '', 0, 'http://grupo.loc:802/?p=96', 2, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -551,7 +852,8 @@ CREATE TABLE `wp_terms` (
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Uncategorized', 'uncategorized', 0);
+(1, 'Uncategorized', 'uncategorized', 0),
+(2, 'Main Menu', 'main-menu', 0);
 
 -- --------------------------------------------------------
 
@@ -570,7 +872,14 @@ CREATE TABLE `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0);
+(1, 1, 0),
+(81, 2, 0),
+(82, 2, 0),
+(83, 2, 0),
+(84, 2, 0),
+(94, 2, 0),
+(95, 2, 0),
+(96, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -592,7 +901,8 @@ CREATE TABLE `wp_term_taxonomy` (
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1);
+(1, 1, 'category', '', 0, 1),
+(2, 2, 'nav_menu', '', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -627,14 +937,17 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', 'wp496_privacy'),
 (15, 1, 'show_welcome_panel', '0'),
-(16, 1, 'session_tokens', 'a:2:{s:64:\"a5da53eb82ca9b0d44b4080622ca7ee6e06fb6270ec66e22a58a697b70374fdb\";a:4:{s:10:\"expiration\";i:1535510039;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\";s:5:\"login\";i:1534300439;}s:64:\"b204ca723247f90431c7acdec65055033e62a0d8a8cf25e432d6835f928fcc8a\";a:4:{s:10:\"expiration\";i:1535510128;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\";s:5:\"login\";i:1534300528;}}'),
+(16, 1, 'session_tokens', 'a:3:{s:64:\"a5da53eb82ca9b0d44b4080622ca7ee6e06fb6270ec66e22a58a697b70374fdb\";a:4:{s:10:\"expiration\";i:1535510039;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\";s:5:\"login\";i:1534300439;}s:64:\"b204ca723247f90431c7acdec65055033e62a0d8a8cf25e432d6835f928fcc8a\";a:4:{s:10:\"expiration\";i:1535510128;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\";s:5:\"login\";i:1534300528;}s:64:\"35665a6ed9efe4a1d29a7993224fc100e4e2a45c739c5dfa53970b6e1c3a5ad3\";a:4:{s:10:\"expiration\";i:1535533833;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\";s:5:\"login\";i:1534324233;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
 (18, 1, 'show_try_gutenberg_panel', '0'),
 (19, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
 (20, 1, 'closedpostboxes_dashboard', 'a:1:{i:0;s:17:\"dashboard_primary\";}'),
 (21, 1, 'metaboxhidden_dashboard', 'a:0:{}'),
 (22, 1, 'wp_user-settings', 'libraryContent=browse'),
-(23, 1, 'wp_user-settings-time', '1534309283');
+(23, 1, 'wp_user-settings-time', '1534309283'),
+(24, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
+(25, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:12:\"add-post_tag\";i:1;s:22:\"add-reusable-block-cat\";}'),
+(26, 1, 'nav_menu_recently_edited', '2');
 
 -- --------------------------------------------------------
 
@@ -774,67 +1087,56 @@ ALTER TABLE `wp_users`
 --
 ALTER TABLE `wp_commentmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
   MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `wp_links`
 --
 ALTER TABLE `wp_links`
   MODIFY `link_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
-
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202;
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
-
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=415;
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
-
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `wp_users`
 --
 ALTER TABLE `wp_users`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
