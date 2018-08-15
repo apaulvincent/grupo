@@ -17,7 +17,7 @@ $brand-8: #eeeeee;  $tint-8: $brand-8;
 $brand-9: #f5f5f5;  $tint-9: $brand-9;
 
 $brand-w: #ffffff; $tint-w: $brand-w;
-$brand-b: #000000; $tint-b: $brand-b;
+$brand-b: #181d23; $tint-b: $brand-b;
 
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
@@ -29,21 +29,32 @@ $placeholder-color: #cccccc;
 
 // Typography
 
-$font-regular: 'Constantia', sans-serif;
-$font-light: 'Constantia', sans-serif;
-$font-book: 'Constantia', sans-serif;
-$font-medium: 'Constantia', sans-serif;
-$font-bold: 'Constantia Bold', sans-serif;
+// sf_pro_textregular
+// sf_pro_textbold
+// sf_pro_textheavy
 
-
-$font-cons-r: 'Constantia', sans-serif;
-$font-cons-b: 'Constantia Bold', sans-serif;
-$font-mont-r: 'montserratregular', sans-serif;
-$font-mont-b: 'montserratbold', sans-serif;
+// cera_prolight
+// cera_proregular
+// cera_problack
 
 
 
-$font-size-base: 15px;
+$font-cons-r: 'sf_pro_textregular', sans-serif;
+$font-cons-b: 'sf_pro_textregular', sans-serif;
+$font-mont-r: 'sf_pro_textregular', sans-serif;
+$font-mont-b: 'sf_pro_textregular', sans-serif;
+
+
+$font-1-r:  'sf_pro_textregular', sans-serif;
+$font-1-b:  'sf_pro_textbold', sans-serif;
+$font-1-h:  'sf_pro_textheavy', sans-serif;
+
+$font-2-r:  'cera_prolight', sans-serif;
+$font-2-b:  'cera_proregular', sans-serif;
+$font-2-h:  'cera_problack', sans-serif;
+
+
+$font-size-base: 16px;
 $line-height-base: 1.4;
 $text-color: $brand-4;
 

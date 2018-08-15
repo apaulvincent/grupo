@@ -56,8 +56,6 @@ private function acf_site_options(){
 
 		if( function_exists('acf_add_options_page') ) {
 			
-				$parent = acf_add_options_page('Site Options');
-				
 				// PARENT
 				$parent = acf_add_options_page(array(
 					'page_title'  => 'Site Options',
@@ -334,10 +332,11 @@ private function acf_site_options(){
 			));
 			
 			
-			endif;
+		endif;
+
+}
 
 
-		}
 
 		function create_reusable_content_post_type() {
 

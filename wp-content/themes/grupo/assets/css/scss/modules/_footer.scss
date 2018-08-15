@@ -1,13 +1,13 @@
 footer.site-footer {
-    background: $brand-b;
-    color: $brand-6;
+    background: $brand-w;
+    color: $brand-b;
     padding: 40px 0;
     font-family: $font-mont-r;
     font-size: 13px;
 
     a {
         font-size: 13px;
-        color: $brand-6;
+        color: $brand-b;
         line-height: 1.2;
         display: block;
         margin: 0 0 6px;
@@ -31,7 +31,7 @@ footer.site-footer {
         position: relative;
 
         input {
-            background: $tint-b;
+            background: $tint-w;
         }
 
         button {
@@ -41,7 +41,7 @@ footer.site-footer {
             height: 100%;
             width: 42px;
             z-index: 1;
-            color: $brand-w;
+            color: $brand-b;
             background: transparent;
             border: none;
             font-size: 22px;

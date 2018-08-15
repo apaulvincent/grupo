@@ -1,9 +1,9 @@
 body {
-    font-family: $font-cons-r;
-    font-size: 14px;
+    font-family: $font-1-r;
+    font-size: $font-size-base;
     line-height: 1.4;
     color: $brand-b;
-    background: $brand-7;
+    background: $brand-w;
 }
 
 p {
@@ -13,7 +13,7 @@ p {
 
 
 .mega {
-    font-family: $font-cons-b;
+    font-family: $font-2-h;
     font-size: 60px;
     line-height: 1;
     margin: 0 0 20px;
@@ -24,7 +24,7 @@ p {
 }
 
 .large {
-    font-family: $font-cons-b;
+    font-family: $font-2-h;
     font-size: 48px;
     line-height: 1;
     margin: 0 0 20px;
@@ -35,7 +35,7 @@ p {
 }
 
 h1, .h1 {
-    font-family: $font-cons-r;
+    font-family: $font-2-h;
     font-size: 32px;
     line-height: 1.2;
     margin: 0 0 20px;
@@ -46,7 +46,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-family: $font-cons-r;
+    font-family: $font-2-h;
     font-size: 32px;
     line-height: 1.2;
     margin: 0 0 20px;
@@ -57,7 +57,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-family: $font-mont-b;
+    font-family: $font-2-h;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 1px;
@@ -70,7 +70,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-    font-family: $font-cons-r;
+    font-family: $font-2-h;
     font-size: 24px;
     line-height: 1.2;
     margin: 0 0 30px;
@@ -81,7 +81,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    font-family: $font-regular;
+    font-family: $font-2-h;
     font-size: 18px;
     line-height: 1.4;
     margin: 0 0 15px;
@@ -92,7 +92,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-family: $font-regular;
+    font-family: $font-2-h;
     font-size: 16px;
     line-height: 1.4;
 
@@ -112,7 +112,7 @@ a {
 
  strong, b {
      font-weight: normal;
-    font-family: $font-cons-b;
+    font-family: $font-1-b;
  }
 
 blockquote {

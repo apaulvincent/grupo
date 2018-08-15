@@ -193,16 +193,12 @@ public function get_article_tile($post, $display_rules = array() ){
 }
 
 
-
 public function pass_file_to_var($file, $var = array()){
 	extract($var);
 	ob_start();
 	include(locate_template($file)); 
 	return ob_get_clean();
 }
-
-
-
 
 //===========================================
 public function get_taxonomy_display($atts){

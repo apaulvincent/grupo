@@ -71,15 +71,6 @@ $content = get_fields($page->ID);
                                     <?php the_content(); ?>
 								</div>
 								
-								<?php 
-									$args = array(
-											'title_reply'=>'Leave a comment',
-											'label_submit'=>'Post'
-										);
-
-									comment_form($args); 
-								?>
-
                             </div>
                         </div>
 

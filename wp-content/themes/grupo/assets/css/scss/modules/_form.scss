@@ -28,7 +28,7 @@
 
 select, 
 select.form-control {
-	font-family: $font-regular;
+	font-family: $font-1-r;
 	font-size: 14px;
 	padding: 0 15px;
 	margin: 0;
@@ -75,7 +75,7 @@ input[type="tel"],
 input[type="email"],
 input[type="date"],
 input[type="password"] {
-	font-family: $font-regular;
+	font-family: $font-1-r;
 	font-size: 14px;
 	padding: 0 15px;
 	margin: 0;
@@ -86,7 +86,7 @@ input[type="password"] {
 	background: $tint-w;
 	outline: none;
 	color: $brand-b;
-	border: 1px solid $brand-8;
+	border: 1px solid $brand-b;
 	width: 100%;
 
 	 -webkit-appearance: none; 
@@ -122,7 +122,7 @@ input[type="password"] {
 
 
 textarea, textarea.form-control {
-	font-family: $font-regular;
+	font-family: $font-1-r;
 	font-size: 14px;
 	width: 100%;
 	padding: 18px;
@@ -261,7 +261,7 @@ div.wpcf7-mail-sent-ng {
 .mc4wp-form input[type=text],
 .mc4wp-form input[type=url]
 {
-	font-family: $font-regular;
+	font-family: $font-1-r;
 	font-size: 14px;
 	padding: 0 15px;
 	margin: 0;
