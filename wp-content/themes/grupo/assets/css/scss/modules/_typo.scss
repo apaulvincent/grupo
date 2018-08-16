@@ -14,20 +14,10 @@ p {
 
 .mega {
     font-family: $font-2-h;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 82px;	
+    line-height: 0.8;
     margin: 0 0 20px;
 
-    @include screen-max-sm(){
-        font-size: 30px;
-    } 
-}
-
-.large {
-    font-family: $font-2-h;
-    font-size: 48px;
-    line-height: 1;
-    margin: 0 0 20px;
 
     @include screen-max-sm(){
         font-size: 30px;

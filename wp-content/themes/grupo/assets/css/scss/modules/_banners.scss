@@ -3,25 +3,19 @@
     overflow: hidden;
     height: 580px;
 
-    @include screen-max-md(){
-        height: 380px; 
-    }
+    border-radius: 15px;	
+    box-shadow: 0 4px 8px 0 rgba(82,97,115,0.18);
 
+
+    @include screen-max-md(){
+        height: 580px; 
+    }
 
     @include screen-max-sm(){
-        height: 230px; 
+        height: 300px; 
     }
 
-     &.feature {
-        height: 620px;
-
-        @include screen-max-md(){
-            height: 230px; 
-         }
-
-     }
-
-    .banner-image-holder {
+    .banner-overlay{
         position: absolute;
         background-size: cover;
         background-position: center;
@@ -33,6 +27,8 @@
         height: 100%;
         width: 100%;
         z-index: 1;
+
+        @include opacity(0.15);
     }
 
     .banner-content {
@@ -43,6 +39,7 @@
         left: 50%;
         color: $brand-w;
         padding: 0;
+        text-align: center;
 
         @include transform(translate(-50%, -50%));
 
@@ -50,37 +47,26 @@
             padding: 0;  
          }
 
-
          h1 {
             @extend .mega;
         }
 
-    }
-
-    .banner-info {
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        right: 0;
-        height: 1px;
-        overflow: visible;
-
-        .col-12 {
-            height: 1px;
-            overflow: visible;
+        h2 {
+            font-size: 24px;
+            line-height: 1;
         }
 
-        .expert-advise {
-            @include transform(translateY(-50%));
-        }
-    
     }
+
 }
 
 
-.banner-static {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
+// .banner-overlay {
+//     height: 100%;
+//     background-size: cover;
+//     background-position: center;
+
+//     border-radius: 15px;	
+//     background-color: #00C1FF;	
+//     box-shadow: 0 4px 8px 0 rgba(82,97,115,0.18);
+// }

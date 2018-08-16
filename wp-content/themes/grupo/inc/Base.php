@@ -139,7 +139,16 @@ private function acf_site_options(){
 				)
 			);
 
-			
+			$contact_flag = array(
+				'key' => 'field_contact_flag',
+				'label' => 'Contact Flag',
+				'name' => 'contact_flag',
+				'type' => 'image',
+				'return_format' => 'url',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			);
+
 			$repeat_field = array(
 				'key' => 'contacts_field_repeater',
 				'label' => 'Contact Info Fields',
@@ -148,9 +157,10 @@ private function acf_site_options(){
 				'instructions' => '',
 				'sub_fields' => array( 
 					$contact_name,  
-					$contact_address,
+					// $contact_address,
 					$contact_phone,
-					$contact_email
+					$contact_flag,
+					// $contact_email
 				),
 				'layout' => 'table',
 			);
@@ -184,7 +194,7 @@ private function acf_site_options(){
 				'name' => 'desktop_site_logo',
 				'type' => 'image',
 				'return_format' => 'url',
-				'preview_size' => 'thumbnail',
+				'preview_size' => 'medium',
 				'library' => 'all',
 			);
 			

@@ -55,17 +55,14 @@ $content = get_fields($page->ID);
                                 </div>
                             </div>
                             <div class="col-12 col-lg-9">
-
                                 <?php 
-
+                                
                                     if ( has_post_thumbnail() ) {
                                         echo '<div class="featured-image">';
                                         the_post_thumbnail('feat-banner-image');
                                         echo '</div>';
                                     }
-
                                 ?>
-
                                 <div class="entry blog-entry">
                                     <h2><?php the_title(); ?></h2>
                                     <?php the_content(); ?>

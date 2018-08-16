@@ -17,6 +17,9 @@
 </nav>
 
 
+<?php include(locate_template('partials/common/contact-info.php')); ?>
+
+
 <nav class="mobile-toggles">
 	<ul>
 		<li>
