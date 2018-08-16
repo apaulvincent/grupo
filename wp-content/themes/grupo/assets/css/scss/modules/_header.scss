@@ -42,3 +42,30 @@
   }
 }
 
+
+
+.contact-info {
+  float: right;
+  margin: 22px 0 0;
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+
+    a {
+      color: $brand-b;
+    }
+
+    img {
+      display: inline-block;
+      margin: 0 5px 0 0;
+    }
+  }
+}

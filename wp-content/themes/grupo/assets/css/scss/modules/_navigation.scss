@@ -33,6 +33,7 @@
 
                 .material-icons {
                     display: none;
+                    @include transition(0.2s all ease);
                 }
 
                 &:hover {
@@ -70,6 +71,10 @@
 
                 & > a:after {
                     border-color: $tint-b;
+                }
+
+                .material-icons {
+                    @include transform(rotate(180deg));
                 }
             }
 

@@ -3,33 +3,31 @@ button {
 }
 
 .btn {
-    padding: 0 30px;
-    font-size: 12px;
-    line-height: 58px;
-    height: 58px;
-    background: $tint-b;
-    border-color: $tint-b;
+    padding: 0 22px;
+    font-size: 18px;
+    height: 48px;
+    line-height: 46px;
+    background: $tint-4;
+    border-color: $tint-4;
     color: $brand-w;
     vertical-align: middle;
     text-align: center;
-    font-family: $font-mont-b;
-    letter-spacing: 2px;
+    font-family: $font-1-b;
     white-space: pre-wrap;
-    text-transform: uppercase;
     text-decoration: none !important;
-    @include round-corners(0);
+    @include round-corners(22px);
     @include transition(0.4s all ease);
+    @include box-shadow(0 4px 8px 0 rgba(255,0,160,0.25));
 
     &:hover, 
     &:focus, 
     &:active,
     &:active:hover,
     &:active:focus {
-        background: $tint-2;
-        border-color: $tint-2;
         color: $brand-w;
         outline: none;
-        @include box-shadow(none);
+        @include opacity(0.8);
+        // @include box-shadow(none);
     }
 
     &.btn-full {
@@ -44,6 +42,24 @@ button {
     &:disabled {
         background: $tint-4;
         border-color: $tint-4;
+    }
+
+}
+
+.btn-icon {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    font-size:26px;
+    line-height: 0;
+    vertical-align: middle;
+    border: 3px solid $tint-w;
+    text-align: center;
+    @include round-corners(60px);
+    @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.98));
+    
+    i {
+        vertical-align: middle;
     }
 
 }
