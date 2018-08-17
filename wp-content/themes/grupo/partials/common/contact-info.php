@@ -13,8 +13,8 @@ $contact_info = get_field('contact_info_fields', 'option');
 				// echo $info['contact_name'];
 
 				echo '<li>';
-				echo '<img src="'.$info['contact_flag'].'" width="35">';
-				echo '<a href="tel:'.$info['contact_phone'].'"><strong>'.$info['contact_phone'].'</strong></a>';
+				echo '<a href="tel:'.$info['contact_phone'].'"><img src="'.$info['contact_flag'].'" width="35">';
+				echo '<strong>'.$info['contact_phone'].'</strong></a>';
 				echo '</li>';
 
 			}

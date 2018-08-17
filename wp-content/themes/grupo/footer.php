@@ -19,7 +19,7 @@ if( $page_setup['content_reusable_blocks'] ) {
 			}
 		}
 
-		echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
+		//echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
 
 	}
 }
@@ -28,25 +28,28 @@ if( $page_setup['content_reusable_blocks'] ) {
 
 
 <footer class="site-footer">
+
+	<?php echo $DB_Content->get_section_spacer('60'); ?>
+	
 		<div class="container">
-
 			<div class="row">
-				<div class="col-12 col-lg-4">
-					<div class="search-form-wrap">
-						<form action="<?php echo esc_url( home_url('/')); ?>" method="get" class="search-form">
-								<input type="text" name="s" id="search" value="<?php the_search_query(); ?>" autocomplete="new" placeholder="" />
-								<button type="submit"><i class="fa fa-search"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
 
-			 <?php echo $DB_Content->get_section_spacer('30'); ?>
-			 <?php echo $DB_Content->get_section_divider('full', ['tint-w']); ?>
-			 <?php echo $DB_Content->get_section_spacer('30'); ?>
-
-			<div class="row">
 				<div class="col-12 col-lg-2">
+					<a href="<?php echo home_url(); ?>">
+						<?php
+
+							$site_logo = get_field('desktop_site_logo', 'option');
+
+							if($site_logo):
+								echo "<img src='".$site_logo."' width='160'/>";
+							else:
+								echo get_bloginfo('name');
+							endif;
+						?>
+					</a>
+				</div>
+
+				<div class="col-12 col-lg-5">
 					<ul class="footer-menu">
 						<?php 
 							wp_nav_menu(
@@ -66,95 +69,78 @@ if( $page_setup['content_reusable_blocks'] ) {
 					</ul>
 				</div>
 
-				<div class="col-12 col-lg-2">
-					<ul class="footer-menu">
-						<?php 
-							wp_nav_menu(
-								array(  
-										'menu' => 'Footer 02',
-										'menu_class' => '',
-										'container' => '',
-										'container_class' => '',
-										'before' => '',
-										'after' => '',
-										'link_before' => '',
-										'link_after' => '',
-										'items_wrap' => '%3$s',
-									)
-							);
-						?>
-					</ul>
-				</div>
-
-				<div class="col-12 col-lg-2">
-					<ul class="footer-menu">
-						<?php 
-							wp_nav_menu(
-								array(  
-										'menu' => 'Footer 03',
-										'menu_class' => '',
-										'container' => '',
-										'container_class' => '',
-										'before' => '',
-										'after' => '',
-										'link_before' => '',
-										'link_after' => '',
-										'items_wrap' => '%3$s',
-									)
-							);
-						?>
-					</ul>
-				</div>
-
-
-				<div class="col-12 col-lg-2">
-					<h5>Follow</h5>
-					<div class="footer-socials">
+				<div class="col-12 col-lg-5">
+					
+					<div class="social">
+						<h5>Follow Us</h5>
 						<?php include(locate_template('partials/common/socials.php')); ?>
 					</div>
-				</div>
 
-
-				<div class="col-12 col-lg-2">
-					<ul class="footer-site-info">
-						<?php
-							$site_copyright = get_field('site_copyright', 'option');
-							$field_site_designer = get_field('field_site_designer', 'option');
-						?>
-						<li><?php echo $site_copyright; ?> <br><br></li> 
-						<li><?php echo $field_site_designer ?> </li>
-					</ul>
-				</div>
-
-				<div class="col-12 col-lg-2">
-					<h5>Contact Us</h5>
-
-					<?php 
-
-						$contact_info_fields = get_field('contact_info_fields', 'option');
-
-						if( $contact_info_fields ):
-							echo '<ul class="footer-site-info">';
-
-							foreach ($contact_info_fields as $field) {
-								echo '<li>
-										'.$field['contact_name'].'<br>
-										P / '.$field['contact_phone'].'<br><br>
-									</li>';
-							}
-							
-							echo '</ul>';
-						endif;
-
-					?>
+					<?php include(locate_template('partials/common/contact-info.php')); ?>
 
 				</div>
 
 			</div>
 		</div>
+
+		<?php echo $DB_Content->get_section_spacer('20'); ?>
+
+		<div class="copyright">
+
+			<?php echo $DB_Content->get_section_spacer('10'); ?>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+
+						<?php echo $DB_Content->get_section_spacer('10'); ?>
+
+						<ul>
+							<li><span><?php echo get_field('site_copyright', 'option'); ?> </span></li>
+							<?php 
+								wp_nav_menu(
+									array(  
+											'menu' => 'Footer 02',
+											'menu_class' => '',
+											'container' => '',
+											'container_class' => '',
+											'before' => '',
+											'after' => '',
+											'link_before' => '',
+											'link_after' => '',
+											'items_wrap' => '%3$s',
+										)
+								);
+							?>
+						</ul>
+
+						<?php echo $DB_Content->get_section_spacer('10'); ?>
+
+					</div>
+					<div class="col-12 col-md-6">
+
+						<?php
+
+						$partners_field = get_field('partners_fields', 'option');
+
+						if( $partners_field ):
+							echo '<ul class="partners">';
+								foreach ($partners_field as $field) {
+									echo '<li><img src="'.$field['partner_logo'].'" width="92"></li>';
+								}
+							echo "</ul>";
+						endif;
+						?>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<?php echo $DB_Content->get_section_spacer('100'); ?>
+
 </footer>
-
-
 
 <!-- Modal: SF Form-->
 <?php if ( !is_page('contact') ): ?>
@@ -185,7 +171,3 @@ if( $page_setup['content_reusable_blocks'] ) {
 
 </body>
 </html>
-
-
-
-

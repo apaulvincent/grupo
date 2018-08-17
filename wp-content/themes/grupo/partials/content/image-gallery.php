@@ -2,63 +2,31 @@
 
 global $DB_Helper, $DB_Content;
 
-// echo '<pre>';
-// var_dump($var);
-// echo '</pre>';
-
 ?>
 
 
-<?php if( $var['class'] == 'awards-credentials'): ?>
 
-        <section class="reusable-block awards-block">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-12">    
-                        <h1 class="block-title"> <?php echo $var['title'] ?></h1>
-                    </div>
-                    <?php  foreach ($var['images'] as $logo) { ?>
-
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <img src="<?php echo $logo['url']; ?>" class="img-fluid">
-                    </div>
-
-                    <?php } ?>
-
-
-                </div>
+<section class="reusable-block trusted-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">    
+                <h5 class="text-center"><?php echo $var['title'] ?></h5>
             </div>
-        </section>
-
-<?php elseif( $var['class'] == 'featured-in'): ?>
-
-        <section class="reusable-block feat-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">    
-                        <h1 class="block-title"> <?php echo $var['title'] ?></h1>
+        </div>
+        <div class="row odd-grid text-center">
+            <?php  foreach ($var['images'] as $logo) { ?>
+                <div class="col">
+                    <div class="img-wrap">
+                        <img src="<?php echo $logo['url']; ?>" width="120" class="img-fluid">
                     </div>
-                    <?php  foreach ($var['images'] as $logo) { ?>
-
-                    <div class="col-6 col-md-2">
-                        <img src="<?php echo $logo['url']; ?>" class="img-fluid">
-                    </div>
-
-                    <?php } ?>
-
-                    <div class="col-12">    
-                        <h4><a href="<?php echo $var['link']; ?>" class="brand-b"><?php echo $var['link_text']; ?></a></h4>
-                    </div>
-
                 </div>
-            </div>
-        </section>
+            <?php } ?>
+        </div>
+    </div>
+</section>
+
 
 <?php
-
-endif;
-
 
 // echo '<pre>';
 // var_dump($var);

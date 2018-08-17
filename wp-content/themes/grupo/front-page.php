@@ -11,11 +11,8 @@ if( $content['content_reusable_blocks'] ) {
 
 		$block = get_fields($id);
 
-		if( $block['class'] == 'download-strip' || $block['reusable_block_setup'] == 'page-grid') {
+		echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
 
-			echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
-
-		}
 	}
 }
 

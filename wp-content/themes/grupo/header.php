@@ -42,7 +42,7 @@ $page_setup = get_fields();
 									$site_logo = get_field('desktop_site_logo', 'option');
 								
 									if($site_logo) {
-										echo "<img src='".$site_logo."' width='338'/>";
+										echo "<img src='".$site_logo."' width='126'/>";
 									} else{
 										echo get_bloginfo('name');
 									}
@@ -62,5 +62,7 @@ $page_setup = get_fields();
 	<?php echo $DB_Content->get_section_spacer('76', ['header-spacer']); ?>
 
 	<?php //include(locate_template('partials/common/header-mobile-nav.php')); ?>
+
+	<?php include(locate_template('partials/common/breadcrumbs.php')); ?>
 
 	<?php include(locate_template('partials/common/header-banner.php')); ?>

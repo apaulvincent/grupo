@@ -1,14 +1,28 @@
+.home .main-banner {
+    height: 580px;
+    margin: 0; // Enable this so no margin below the header on homepage
+    
+    @include screen-max-md(){
+        height: 400px; 
+    }
+
+    @include screen-max-sm(){
+        height: 300px; 
+    }
+
+}
+
 .main-banner {
     position: relative;
     overflow: hidden;
-    height: 580px;
+    height: 450px;
+    margin: 26px 0 0 ;
 
     border-radius: 15px;	
     box-shadow: 0 4px 8px 0 rgba(82,97,115,0.18);
 
-
     @include screen-max-md(){
-        height: 580px; 
+        height: 400px; 
     }
 
     @include screen-max-sm(){
@@ -29,6 +43,10 @@
         z-index: 1;
 
         @include opacity(0.15);
+        
+        &.solid {
+            @include opacity(1);
+        }
     }
 
     .banner-content {
@@ -55,6 +73,15 @@
             font-size: 24px;
             line-height: 1;
             margin: 0 0 34px;
+
+            @include screen-max-md(){
+                font-size: 20px;
+            } 
+        
+            @include screen-max-sm(){
+                font-size: 18px;
+            } 
+
         }
 
     }

@@ -12,37 +12,45 @@ $button_text = $page_setup['button_text'];
 $button_url = $page_setup['button_url'];
 $video_url = $page_setup['video_url'];
 
-
 $bg_color = $page_setup['banner_background_color'];
+
+
+// Banner opaque if no writeups...
+$solid_banner = $content ? '' : 'solid';
 
 ?>
 
 <?php if($image): ?>
 
 <?php 
+
     $banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
 ?>
 
+
+<!-- Full width banner on hompage -->
+
+<?php if( is_front_page() ): ?>
 <div class="container-fluid">
+<?php else: ?>
+<div class="container">
+<?php endif; ?>
+
     <div class="row">
         <div class="col-12">
 
             <div class="main-banner" style="background-color: <?php echo $bg_color ?>">
-                <div class="banner-overlay" style="background-image: url(<?php echo $banner_image_url[0]; ?>);"></div>
+                <div class="banner-overlay <?php echo $solid_banner; ?>" style="background-image: url(<?php echo $banner_image_url[0]; ?>);"></div>
                 <div class="banner-content">
                     <?php echo $content; ?>
 
-
                     <?php if($btn_type == 'video'): ?>
 
-                    <button class="btn btn-icon btn-outline" data-toggle="modal" data-target="#vid-modal"><i class="material-icons">play_arrow</i></button>
+                        <button class="btn btn-icon btn-outline" data-toggle="modal" data-target="#vid-modal"><i class="material-icons">play_arrow</i></button>
 
-                    <?php elseif($btn_type == 'share'): ?>
+                        <?php elseif($btn_type == 'default'): ?>
 
-
-                    <?php else: ?>
-
-                    <a href="<?php echo $button_url; ?>" class="btn"><?php echo $button_text; ?></a>
+                        <a href="<?php echo $button_url; ?>" class="btn"><?php echo $button_text; ?></a>
 
                     <?php endif; ?>
 

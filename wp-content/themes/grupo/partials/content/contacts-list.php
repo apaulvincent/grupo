@@ -28,7 +28,6 @@ global $DB_Helper, $DB_Content;
 
                 foreach ($contact_info_fields as $key => $field) {
 
-
                     echo '<div class="col-12 col-lg-4 eq-block-wrap"><div class="eq-block tint-w card-'.$key.'"><h4><strong>'.$field['contact_name'].' / </strong>';
 
                     echo $field['contact_address'] ? $field['contact_address'] : '';

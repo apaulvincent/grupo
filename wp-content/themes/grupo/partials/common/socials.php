@@ -24,6 +24,9 @@ if( $social_fields ):
             case 'google':
                 echo '<li><a href="'.$field['social_url'].'" target-"blank"><i class="fab fa-google-plus-square"></i></a>';
                 break;
+            case 'instagram':
+                echo '<li><a href="'.$field['social_url'].'" target-"blank"><i class="fab fa-instagram"></i></a>';
+                break;
         }
 
    }

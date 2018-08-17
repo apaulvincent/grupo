@@ -1,3 +1,7 @@
+.home .site-header {
+  @include box-shadow(none); // Enable this so no shadow on homepage
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -57,7 +61,7 @@
   li {
     display: inline-block;
     font-size: 14px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 14px;
 
     a {
       color: $brand-b;

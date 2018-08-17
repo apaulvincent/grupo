@@ -22,26 +22,11 @@
 }
 
 
-.title-bar {
-    background: $tint-w;
-    color: $brand-b;
-    padding:  40px 0;
-
-    @include screen-max-sm(){
-        padding: 40px 0;
-    }
-
-    h1, h1.large {
-        margin: 0;
-    }
-}
-
-
 .main {
-    padding: 30px 0 100px;
+    padding: 60px 0;
   
     @include screen-max-sm(){
-        padding: 60px 0;
+        padding: 30px 0;
     }
 
     .featured-image {
@@ -52,8 +37,6 @@
     }
 
     .entry {
-
-        padding: 60px 24px;
         background: $tint-w;
 
         &.blog-entry {
@@ -66,30 +49,10 @@
 }
 
 .reusable-block {
-    padding: 100px 0;
+    padding: 40px 0;
 
     @include screen-max-sm(){
-        padding: 60px 0;
-    }
-
-
-    .block-title {
-        font-family: $font-cons-b;
-        font-size: 46px;
-        line-height: 1;
-        margin: 0 0 20px;
-    
-        @include screen-max-sm(){
-            font-size: 30px;
-        } 
-        
-        &:after {
-            content: '';
-            display: block;
-            height: 1px;
-            border-bottom: 1px solid $tint-b;
-            margin: 5px 0 0;
-        }
+        padding: 30px 0;
     }
 
 }
@@ -129,3 +92,39 @@
     height: 300px;
     margin: 0;
 }
+
+
+// CUSTOM BLOCKS
+
+
+.trusted-block {
+
+    .block-title {
+        font-family: $font-2-h;
+        line-height: 1;
+        margin: 0 0 10px;
+        text-align: center;
+        
+    }
+
+    .img-wrap {
+        text-align: center;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .odd-grid .col{
+
+        @include screen-max-sm(){
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            margin: auto;
+        }
+
+    }
+}
+

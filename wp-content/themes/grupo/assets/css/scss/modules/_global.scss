@@ -56,3 +56,22 @@
   }
 
 }
+
+
+.breadcrumbs {
+  font-size: 14px;
+  padding: 40px 0 20px;
+  border-bottom: 1px solid $tint-7;
+  display: block;
+}
+
+.back-btn {
+  float: right;
+  font-size: 14px;
+  
+  i {
+    font-size: 20px;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+  }
+}

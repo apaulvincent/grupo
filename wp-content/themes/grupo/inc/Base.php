@@ -25,10 +25,10 @@
 
 public function register_menus(){
 	add_theme_support( 'menus' );
-	register_nav_menu( 'main_menu', __( 'Main Menu', 'DFP' ) );
-	register_nav_menu( 'footer1', __( 'Footer 1', 'DFP' ) );
-	register_nav_menu( 'footer2', __( 'Footer 2', 'DFP' ) );
-	register_nav_menu( 'footer3', __( 'Footer 3', 'DFP' ) );
+	register_nav_menu( 'main_menu', __( 'Main Menu', 'Grupo' ) );
+	register_nav_menu( 'footer1', __( 'Footer 1', 'Grupo' ) );
+	register_nav_menu( 'footer2', __( 'Footer 2', 'Grupo' ) );
+	// register_nav_menu( 'footer3', __( 'Footer 3', 'Grupo' ) );
 }
 
 
@@ -209,11 +209,35 @@ private function acf_site_options(){
 			);
 			
 			
+			$partner_logo = array(
+				'key' => 'field_partner_logo',
+				'label' => 'Partner Logo',
+				'name' => 'partner_logo',
+				'type' => 'image',
+				'return_format' => 'url',
+				'preview_size' => 'full',
+				'library' => 'all',
+			);
+
+			$partners_repeat_field = array(
+				'key' => 'partners_field_repeater',
+				'label' => 'Partners Fields',
+				'name' => 'partners_fields',
+				'type' => 'repeater',
+				'instructions' => '',
+				'sub_fields' => array( 
+					$partner_logo,
+				),
+				'layout' => 'table',
+			);
+
+
 			acf_add_local_field_group(array (
 				'key' => 'branding_options',
 				'title' => 'Branding Options',
 				'fields' => array ( 
 									$desktop_site_logo_field, 
+									$partners_repeat_field, 
 									// $desktop_site_logo_light_field, 
 								),
 				'location' => array (

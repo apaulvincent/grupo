@@ -19,7 +19,8 @@
       }
 
       a {
-          color: $brand-w;
+          font-size: 20px;
+          color: $brand-b;
       }
 
     }
@@ -109,40 +110,3 @@
   }
   
   
-  
-  
-  .footer-socials {
-    padding: 0;
-    margin: 0;
-    
-
-    @include screen-max-sm(){
-      text-align: center;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        white-space: nowrap;
-    }
-
-    li {
-      display: block;
-      margin: 0 20px 0 0;
-
-        @include screen-max-md(){
-            margin-right: 16px;
-        }
-
-        a {
-            font-size: 24px !important;
-            color: $brand-4;
-
-            &:hover {
-              color: $brand-2;
-            }
-        }
-
-    }
-}

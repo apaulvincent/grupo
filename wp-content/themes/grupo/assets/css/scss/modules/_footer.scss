@@ -1,111 +1,131 @@
 footer.site-footer {
+    border-top: 1px solid $tint-7;
     background: $brand-w;
     color: $brand-b;
-    padding: 40px 0;
-    font-family: $font-mont-r;
-    font-size: 13px;
+    font-family: $font-1-r;
+    font-size: 12px;
+
+
+    .contact-info {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+
+        li {
+            display: block;
+            margin: 0 0 12px;
+            text-align: right;
+
+            img {
+                margin: 0 8px 0 0;
+                float: left;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
 
     a {
-        font-size: 13px;
+        font-size: 12px;
         color: $brand-b;
         line-height: 1.2;
         display: block;
         margin: 0 0 6px;
+        text-transform: lowercase;
 
         &:hover {
-            color: $brand-2;
-        }
-
-    }
-
-    h5 {
-        font-family: $font-mont-b;
-        font-size: 13px;
-    }
-
-    @include screen-max-sm(){
-        text-align: center;
-    }
-
-    .search-form {
-        position: relative;
-
-        input {
-            background: $tint-w;
-        }
-
-        button {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 42px;
-            z-index: 1;
             color: $brand-b;
-            background: transparent;
-            border: none;
-            font-size: 22px;
-            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+   & > li {
+        margin: 0;
+        display: table-cell;
+        vertical-align: top;
+        padding-right: 36px;
+
+        & > a {
+            font-family: $font-1-b;
+            font-size: 16px;
+            text-transform: none;
+            margin: 0 0 15px;
+
+            &:hover {
+                color: $brand-b;
+                cursor: default;
+                text-decoration: none;
+            }
+        }
+
+        & > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+            }
         }
 
     }
 
+}
 
-    ul.footer-menu {
+
+
+
+.copyright {
+    border-top: 1px solid $tint-7;
+
+    ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-
-        // @include screen-max-sm(){
-        // }
-
-        // @include screen-max-md(){
-        // }
-
-       & > li {
-            margin: 0;
-
-            & > a {
-                display: block;
-                font-family: $font-mont-b;
-                margin: 0 0 20px;
-            }
-            
-            & > ul {
-                list-style-type: none;
-                margin: 0 0 20px;
-                padding: 0;
-
-                li {
-                    margin: 0;
-                }
-            }
-
-        }
-
     }
 
-
-
-    .footer-site-info {
-        margin: 0 0 5px;
-        padding: 0;
-
-        @include screen-max-sm(){
-            margin: 20px 0;
-        }
-
-        li {
-            display: inline-block;
-            font-size: 13px;
-            margin: 0;
-
-            @include screen-max-sm(){
-                display: block;
-                margin: 0 0 5px;
-            }
-        }
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 15px 0 0;
     }
 
+    a {
+        font-size: 12px;
+        color: $brand-b;
+        line-height: 1.2;
+        display: block;
+        margin: 0 0 6px;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $brand-b;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.partners {
+
+    float: right;
+
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 15px;
+    }
 
 }

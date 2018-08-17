@@ -36,6 +36,7 @@
 }
   
 
+.material-icons.fliped { @include transform(scaleX(-1)); }
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
