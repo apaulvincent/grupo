@@ -56,8 +56,6 @@ $page_setup = get_fields();
 				</div>
 			</div>
 	</header><!-- #masthead -->
-	
-
 
 	<?php echo $DB_Content->get_section_spacer('76', ['header-spacer']); ?>
 

@@ -18,6 +18,7 @@
 
 		add_action( 'init', array($this, 'create_reusable_content_post_type' ));
 		add_action( 'init', array($this, 'create_reusable_content_taxonomy' ));
+		add_action( 'init', array($this, 'create_testimonial_post_type' ));
 
 	}
 
@@ -417,6 +418,47 @@ private function acf_site_options(){
 			);
 		}
 
+
+
+
+
+		function create_testimonial_post_type() {
+
+			$labels = array(
+				'name' => _x('Testimonial', 'post type general name'),
+				'singular_name' => _x('Testimonial', 'post type singular name'),
+				'add_new' => _x('Add Testimonial', 'portfolio item'),
+				'add_new_item' => __('Add Testimonial'),
+				'edit_item' => __('Edit Testimonial'),
+				'new_item' => __('New Testimonial'),
+				'view_item' => __('View Testimonial'),
+				'search_items' => __('Search Testimonial'),
+				'not_found' =>  __('Nothing found'),
+				'not_found_in_trash' => __('Nothing found in Trash'),
+				'parent_item_colon' => ''
+			);
+		 
+			$args = array(
+				'labels' => $labels,
+				'public' => false,
+				'publicly_queryable' => false,
+				'show_ui' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'hierarchical' => false,
+				'menu_position' => null,
+				'has_archive'  	=>  false,
+				'supports' 		=> array( 'title' )
+				); 
+		 
+			register_post_type( 'testimonial' , $args );			
+		}   
+
+
+
+
+		
 
 }//end class
 

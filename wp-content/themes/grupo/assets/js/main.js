@@ -17504,6 +17504,11 @@ var _helpers = __webpack_require__(11);
 
 									$(this).toggleClass('on');
 						});
+
+						$('.util-drawer').on('click', '.toggle', function (e) {
+									e.preventDefault();
+									$(this).parent('.util-drawer').toggleClass('on');
+						});
 			});
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

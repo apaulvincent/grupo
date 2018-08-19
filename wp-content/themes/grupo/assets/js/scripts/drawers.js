@@ -69,6 +69,12 @@ import {debounce} from './helpers';
 		});
 
 
+		$('.util-drawer').on('click', '.toggle', function(e){
+			e.preventDefault();
+			$(this).parent('.util-drawer').toggleClass('on');
+		})
+
+
 
 	});
 

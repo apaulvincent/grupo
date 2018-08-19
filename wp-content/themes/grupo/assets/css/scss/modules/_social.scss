@@ -28,67 +28,78 @@
 }
 
 
+.social-share {
+  padding: 20px;
+}
   
   // SHARE BUTTONS:
-  
 
-.social-share {
-  position: fixed;
-  z-index: 3;
-  top: 50%;
-  left: 0;
-
-  @include transform(translateY(-50%));
+#ssba-classic-2 .ssbp-text.ssbp-text {
+  display: inline-block !important;
 }
-
 .ssba {
       .ssba_facebook_share,
       .ssba_twitter_share,
       .ssba_email_share,
       .ssba_linkedin_share,
+      .ssba_whatsapp_share,
       .ssba_google_share {
         font-family: 'Font Awesome Brands';
         font-weight: 400;
-        margin: 0;
-        color: $brand-w;
-        background: $brand-b;
+        margin: 0 0 5px;
+        color: $brand-b;
+        background: transparent;
         font-size: 18px;
         display: block;
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-        text-align: center;
+        text-align: left;
+
+          &:before {
+            width: 40px;
+            display: inline-block;
+          }
 
           &:hover {
-            color: $brand-w;
+            color: $brand-b;
+            text-decoration: none;
+
+            .ssbp-text { 
+              text-decoration: underline;
+            }
+
           }
-  
-          img, .ssbp-text {
+
+          .ssbp-text {
+            display: block !important;
+            font-family: $font-1-r;
+            font-size: 12px;
+          }
+
+          img {
               display: none !important;
           }
       }
 
       .ssba-share-text {
-          color: $brand-6;
-          display: none;
-          
-          @include screen-max-md(){
-            display: none;
-          }
+          color: $brand-b;
+          font-size: 16px;
+          line-height: 1; 
+          display: block;
+          margin: 0;
+          font-family: $font-1-b;
       }
 
-      .ssba_facebook_share{
-        background: #375e99;
-      }
-      .ssba_twitter_share{
-        background: #01a5fa;
-      }
-      .ssba_google_share{
-        background: #df4e3b;
-      }
-      .ssba_linkedin_share{
-        background: #0179b6;
-      }
+      // .ssba_facebook_share{
+      //   background: #375e99;
+      // }
+      // .ssba_twitter_share{
+      //   background: #01a5fa;
+      // }
+      // .ssba_google_share{
+      //   background: #df4e3b;
+      // }
+      // .ssba_linkedin_share{
+      //   background: #0179b6;
+      // }
 
       .ssba_facebook_share:before{
         content: "\F39E";
@@ -105,6 +116,9 @@
       }
       .ssba_linkedin_share:before{
        content: "\F0E1";
+      }
+      .ssba_whatsapp_share:before{
+       content: "\f232";
       }
   
   }

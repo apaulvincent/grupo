@@ -20,19 +20,19 @@ $banner_image = $banner_image_url ? $banner_image_url[0] : $placeholder;
 
     <div class="container">
         <div class="wide-gutter row">
+
             <div class="col-12 col-lg-6 eq-block-wrap">
                 <a href="<?php echo get_permalink( $latest_post->ID ); ?>" class="eq-block tint-2 latest-post-block" style="background-image: url(<?php echo $banner_image; ?>);">
-                    <h4><strong>The Latest</strong> / <?php echo $latest_post->post_title; ?></h4>
+                Foobar
                 </a>
             </div>
-            <div class="col-12 col-lg-6 eq-block-wrap">
 
-                <div class="eq-block tint-1">
-                    <div class="singup-form">
-                        <?php echo do_shortcode('[mc4wp_form id="1374"]'); ?>
-                    </div>
-                </div>
+            <div class="col-12 col-lg-6 eq-block-wrap">
+                <a href="<?php echo get_permalink( $latest_post->ID ); ?>" class="eq-block tint-2 latest-post-block" style="background-image: url(<?php echo $banner_image; ?>);">
+                Foobar
+                </a>
             </div>
+
 
         </div>
     </div>

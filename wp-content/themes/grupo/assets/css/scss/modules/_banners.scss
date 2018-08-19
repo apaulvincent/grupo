@@ -14,7 +14,7 @@
 
 .main-banner {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     height: 450px;
     margin: 26px 0 0 ;
 
@@ -41,6 +41,7 @@
         height: 100%;
         width: 100%;
         z-index: 1;
+        border-radius: 15px;	
 
         @include opacity(0.15);
         
@@ -86,15 +87,79 @@
 
     }
 
+
+    
+    .util-drawer {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        right: 66px;
+       @include transform(translateY(-29px));
+
+    }
+
 }
 
 
-// .banner-overlay {
-//     height: 100%;
-//     background-size: cover;
-//     background-position: center;
 
-//     border-radius: 15px;	
-//     background-color: #00C1FF;	
-//     box-shadow: 0 4px 8px 0 rgba(82,97,115,0.18);
-// }
+
+.util-drawer {
+    height: 58px;
+    width: 58px;
+    padding: 0;
+    background: $tint-4;
+    overflow: hidden;
+
+    @include transition(0.4s all ease);
+    @include round-corners(58px);
+    @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.18));
+
+
+    .social-share {
+        visibility: hidden;
+        height: 1px;
+        overflow: hidden;
+        @include opacity(0);
+        @include transition(0.4s all ease);
+    }
+
+    .icon-toggle-off {
+        display: none;
+    }
+
+    &.on {
+        width: 180px;
+        height: 200px;
+        background: $brand-7;
+        @include round-corners(4px);
+
+        .social-share {
+            visibility: visible;
+            height: auto;
+            @include opacity(1);
+        }
+
+        .toggle {
+            color: $brand-b;
+            background: $brand-7;
+            border-color: $brand-7;
+        }
+
+        .icon-toggle-off {
+            display: block;
+        }
+        .icon-toggle-on {
+            display: none;
+        }
+    }
+
+
+    .toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        @include box-shadow(none);
+    }
+
+}    
