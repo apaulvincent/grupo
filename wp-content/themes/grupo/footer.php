@@ -2,31 +2,6 @@
 
 </div><!-- Site Wrap -->
 
-<?php 
-
-$page_setup = get_fields();
-
-
-if( $page_setup['content_reusable_blocks'] ) {
-
-	foreach ( $page_setup['content_reusable_blocks'] as $key => $value) {
-
-		$block = get_fields($value);
-
-		if( is_front_page() ) {
-			if( $block['class'] == 'download-strip' || $block['reusable_block_setup'] == 'page-grid') {
-				continue;
-			}
-		}
-
-		//echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
-
-	}
-}
-
-?>
-
-
 <footer class="site-footer">
 
 	<?php echo $DB_Content->get_section_spacer('60'); ?>

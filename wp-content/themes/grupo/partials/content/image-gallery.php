@@ -4,7 +4,7 @@ global $DB_Helper, $DB_Content;
 
 ?>
 
-
+<?php echo $DB_Content->get_section_spacer('40'); ?>
 
 <section class="reusable-block trusted-block">
     <div class="container">
@@ -25,6 +25,7 @@ global $DB_Helper, $DB_Content;
     </div>
 </section>
 
+<?php echo $DB_Content->get_section_spacer('40'); ?>
 
 <?php
 

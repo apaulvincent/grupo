@@ -7,11 +7,13 @@ $content = get_fields($posts_page);
 
 ?>
 
-    <section class="title-bar" style="background-color: <?php echo $content['title_bar_background']; ?>">
+    <?php echo $DB_Content->get_section_spacer('60'); ?>
+
+    <section class="title-bar">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="large"><?php echo get_the_title($posts_page); ?></h1>
+                <div class="col-12 col-md-8 offset-md-2 text-center">
+                    <?php echo get_field('blog_content', 87); ?>
                 </div>
             </div>
         </div>
@@ -20,67 +22,55 @@ $content = get_fields($posts_page);
 
 	<section class="main">
 		<div class="container">
-				<div class="row">
+				<div class="row card-collection">
 
-					<div class="col-12 col-lg-8">
 
 						<?php 
 							if ( have_posts() ) :
 							while ( have_posts() ) : the_post();
 						?>
 
-                        <div class="row">
-                            <div class="col-12 col-lg-3">
-                                <div class="post-meta">
-                                    <h3><?php the_date(); ?></h3>
-                                    <p>By <?php the_author(); ?></p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-9">
+                            <div class="col-12 col-md-4 card-wrap">
 
                                 <?php 
-
-                                    if ( has_post_thumbnail() ) {
-                                        echo '<div class="featured-image">';
-                                        the_post_thumbnail('feat-banner-image');
-                                        echo '</div>';
-                                    }
-
+                                    $banner_image_url = wp_get_attachment_image_src( get_post_thumbnail_id() , 'thumb-md');
+                                    $placeholder = $DB_Helper->get_placeholder_image_url(345, 230);
+                                    $banner_image = $banner_image_url ? $banner_image_url[0] : $placeholder;
                                 ?>
 
-                                <div class="entry blog-entry">
-                                    <h2><?php the_title(); ?></h2>
-                                    <?php the_excerpt(); ?>
-                                    <a href="<?php echo get_permalink(); ?>" class="btn btn-1">More</a>
+                                <a href="<?php echo get_permalink(); ?>" class="card">
+                                <img class="card-img-top" src="<?php echo $banner_image; ?>" alt="">
+                                <div class="card-body">
+                                    <h2 class="card-title"><?php the_title(); ?></h2>
+                                    <?php 
+                                        $content = get_the_excerpt();
+                                       echo '<span>'.excerpt($content, 30) . '</span>'; 
+                                    ?>
                                 </div>
+                                </a>
 
                             </div>
-                        </div>
 
 						<?php  endwhile; ?>
+
                         
-                        <div class="paging-wrap bottom">
+                        <div class="col-12">
+                            <?php //echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
+                            <?php echo $DB_Content->get_section_spacer(30); ?>
                             <?php wp_pagination(); ?>
                         </div>
-
-                        <?php endif; ?>
-
-					</div>
-					
-					<div class="col-12 col-lg-3 offset-lg-1">
-						<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
-                        <?php get_sidebar(); ?>
                         
-                        <?php if( is_dynamic_sidebar( 'sidebar-widget' ) ): ?>
-                        <?php dynamic_sidebar( 'sidebar-widget' ); ?>
-                        <?php endif; ?>
                         
-					</div>
+                        <?php endif; ?>
 
 				</div>
 		</div>
 	</section>
 
 <?php
+
+// $block2 = get_fields(154); // Reusable Block : Questions? We got answers!
+// echo $DB_Content->pass_file_to_var('partials/content/standard-content.php', $block2);
+
 
 get_footer();

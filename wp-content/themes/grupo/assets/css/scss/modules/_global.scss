@@ -4,16 +4,23 @@
 
 .pagination {
   display: block;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
   li {
     display: inline-block;
-    border: 1px solid $tint-1;
+    border: none;
     margin: 0;
     padding: 0;
+    @include round-corners(40px);
 
-    a {
+    a, span {
+      font-family: $font-1-b;
       display: inline-block;
       width: 40px;
       height: 40px;
@@ -32,19 +39,41 @@
       vertical-align: middle;
       color: $brand-b;
       border-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+        box-shadow: 0 0 0 0 rgba(82,97,115,0.2);
+  
+      }
     }
 
     &.active {
-      background: $tint-1;
+      background: $tint-b;
 
       a {
         color: $brand-w;
       }
       
     }
+
+    &:hover {
+      background-color: #DADEE5;
+      box-shadow: 0 2px 4px 0 rgba(82,97,115,0.2);
+
+      a {
+        color: $brand-b;
+      }
+    }
+
+    &.disabled:hover {
+      background-color: transparent;
+      box-shadow: 0 0 0 0 rgba(82,97,115,0.2);
+    }
+
   }
 
-  .prev a, .next a {
+  .prev a, .next a, .prev span, .next span {
+    
     i {
       font-size: 26px;
       width: 40px;
@@ -53,6 +82,7 @@
       line-height: 40px;
       text-align: center;
     }
+
   }
 
 }

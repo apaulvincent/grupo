@@ -18,9 +18,11 @@ add_image_size( 'listing-image', 560, 560, true );
 add_image_size( 'single-image', 560, 360, true );
 
 add_image_size( 'thumb-sm', 140, 140, true );
-add_image_size( 'thumb-md', 400, 400, true );
+add_image_size( 'thumb-md', 510, 340, true );
 add_image_size( 'thumb-lg', 600, 600, true );
 // add_image_size( 'news-thumb', 790, 99999, false ); // false -> resize no crop
+
+
 
 
 // Pagination
@@ -47,8 +49,11 @@ function wp_pagination() {
   }
   echo '<div class="pagination"><ul>' . "\n";
   /** Previous Post Link */
-  if ( get_previous_posts_link() )
-    printf( '<li class="prev">%s</li>' . "\n", get_previous_posts_link('<i class="pe-7s-angle-left"></i>') );
+  if ( get_previous_posts_link() ){
+    printf( '<li class="prev">%s</li>' . "\n", get_previous_posts_link('<i class="material-icons">chevron_left</i>') );
+  } else {
+    printf( '<li class="prev disabled">%s</li>' . "\n", '<span><i class="material-icons">chevron_left</i></span>');
+  }
   /** Link to first page, plus ellipses if necessary */
   if ( ! in_array( 1, $links ) ) {
     $class = 1 == $paged ? ' class="active"' : '';
@@ -70,10 +75,33 @@ function wp_pagination() {
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
   }
   /** Next Post Link */
-  if ( get_next_posts_link() )
-    printf( '<li class="next">%s</li>' . "\n", get_next_posts_link('<i class="pe-7s-angle-right"></i>') );
+  if ( get_next_posts_link() ){
+
+    printf( '<li class="next">%s</li>' . "\n", get_next_posts_link('<i class="material-icons">chevron_right</i>') );
+  } else {
+    printf( '<li class="next disabled">%s</li>' . "\n", '<span><i class="material-icons">chevron_right</i></span>' );
+  }
   echo '</ul></div>' . "\n";
 }
+
+
+
+
+
+function excerpt($text, $limit) {
+	$excerpt = explode(' ',$text , $limit);
+	if (count($excerpt)>=$limit) {
+	  array_pop($excerpt);
+	  $excerpt = implode(" ",$excerpt).'...';
+	} else {
+	  $excerpt = implode(" ",$excerpt);
+	} 
+	// $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+	$excerpt = str_replace(']]>', ']]&gt;', $excerpt);
+	return $excerpt;
+}
+
+
 
 // Sidebar main content
 function sidebar_content( $atts) {

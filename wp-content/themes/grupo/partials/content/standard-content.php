@@ -9,25 +9,26 @@ global $DB_Helper, $DB_Content;
 ?>
 
 
-<?php if( $var['class'] == 'download-strip') : ?>
-    <section class="cta-block-full tint-2 brand-1 <?php echo $var['class'] . '-block' ?> ">
-        <?php echo $var['content']; ?>
-    </section>
-<?php else: ?>
 
-    <section class="<?php echo $var['reusable_block_setup'] . '-block' ?> <?php echo $var['class']?>">
+<section class="<?php echo $var['reusable_block_setup'] . '-block' ?> <?php echo $var['class']?>">
+<div class="container">
+<div class="row">
+<div class="col-12 offset-md-2 col-md-8 text-center">
 
-        <h4> <?php echo $var['title'] ?></h4>
+    <h1 class="layout-h1"> <?php echo $var['title'] ?></h1>
 
-        <?php echo $var['content']; ?>
+    <?php echo $var['content']; ?>
 
-        <?php if( $var['link_text'] && $var['link'] ): ?>
-            <a href="<?php echo $var['link']; ?>" class="btn"><?php echo $var['link_text']; ?></a>
-        <?php endif; ?>
+    <?php echo $DB_Content->get_section_spacer('8'); ?>
+    <?php if( $var['link_text'] && $var['link'] ): ?>
+        <a href="<?php echo $var['link']; ?>" class="btn btn-jump"><?php echo $var['link_text']; ?></a>
+    <?php endif; ?>
 
-    </section>
+    <?php echo $DB_Content->get_section_spacer('60'); ?>
 
-<?php endif; ?>
-
+</div>
+</div>
+</div>
+</section>
 
 

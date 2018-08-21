@@ -1,4 +1,4 @@
-<nav class="main-menu">
+<nav class="main-menu d-none d-xl-block">
 	<ul>
 	<?php
 		wp_nav_menu(array(

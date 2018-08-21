@@ -8258,10 +8258,10 @@ a:hover {
 @media screen and (max-width: 991px) {
     .layout-h1, .eq-blocks .eq-content h1, .home-column h1 {
       font-size: 30px; } }
-.layout-p, .eq-blocks .eq-content p, .home-column p {
+.layout-p, .cta-block p, .eq-blocks .eq-content p, .home-column p {
   font-size: 18px; }
 @media screen and (max-width: 991px) {
-    .layout-p, .eq-blocks .eq-content p, .home-column p {
+    .layout-p, .cta-block p, .eq-blocks .eq-content p, .home-column p {
       font-size: 16px; } }
 strong, b {
   font-weight: normal;
@@ -8772,9 +8772,6 @@ button {
 @media screen and (max-width: 991px) {
     .main {
       padding: 30px 0; } }
-.main .featured-image img {
-    width: 100%;
-    height: auto; }
 .main .entry {
     background: #ffffff; }
 .trusted-block .block-title {
@@ -8844,6 +8841,8 @@ button {
   border-radius: 25px;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px; }
+.home-column .row {
+  overflow: hidden; }
 .home-column .content-wrap {
   max-width: 440px;
   margin: 0 auto;
@@ -8871,9 +8870,30 @@ button {
     border-radius: 100%;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-box-shadow: 0 16px 24px 0 rgba(82, 97, 115, 0.14);
+    box-shadow: 0 16px 24px 0 rgba(82, 97, 115, 0.14); }
 .home-column .img-wrap img {
     max-width: 100%; }
+.card-collection .card-wrap {
+  margin-bottom: 30px; }
+.card-collection .card {
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(82, 97, 115, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(82, 97, 115, 0.2);
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: none;
+  color: #181d23;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease; }
+.card-collection .card:hover {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
+    box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18); }
 .map-container {
   width: 100%;
   height: 300px;
@@ -9089,11 +9109,17 @@ button {
     display: inline-block;
     font-size: 14px;
     margin: 0 0 0 14px; }
+@media only screen and (max-width: 1400px) {
+      .contact-info li {
+        margin: 0; } }
 .contact-info li a {
       color: #181d23; }
 .contact-info li img {
       display: inline-block;
       margin: 0 5px 0 0; }
+@media only screen and (max-width: 1400px) {
+    .contact-info strong {
+      display: none; } }
 .main-menu {
   float: left;
   margin: 25px 0 0; }
@@ -9319,14 +9345,21 @@ body.menu-drawer-on .mobile-main-nav-drawer {
   height: 1px; }
 .pagination {
   display: block;
-  text-align: right;
+  text-align: center;
   white-space: nowrap; }
-.pagination li {
-    display: inline-block;
-    border: 1px solid #00C1FF;
+.pagination ul {
     margin: 0;
     padding: 0; }
-.pagination li a {
+.pagination li {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px; }
+.pagination li a, .pagination li span {
+      font-family: "sf_pro_textbold", sans-serif;
       display: inline-block;
       width: 40px;
       height: 40px;
@@ -9343,11 +9376,25 @@ body.menu-drawer-on .mobile-main-nav-drawer {
       vertical-align: middle;
       color: #181d23;
       border-color: transparent; }
+.pagination li.ellip:hover {
+        background-color: transparent;
+        -webkit-box-shadow: 0 0 0 0 rgba(82, 97, 115, 0.2);
+                box-shadow: 0 0 0 0 rgba(82, 97, 115, 0.2); }
 .pagination li.active {
-      background: #00C1FF; }
+      background: #181d23; }
 .pagination li.active a {
         color: #ffffff; }
-.pagination .prev a i, .pagination .next a i {
+.pagination li:hover {
+      background-color: #DADEE5;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(82, 97, 115, 0.2);
+              box-shadow: 0 2px 4px 0 rgba(82, 97, 115, 0.2); }
+.pagination li:hover a {
+        color: #181d23; }
+.pagination li.disabled:hover {
+      background-color: transparent;
+      -webkit-box-shadow: 0 0 0 0 rgba(82, 97, 115, 0.2);
+              box-shadow: 0 0 0 0 rgba(82, 97, 115, 0.2); }
+.pagination .prev a i, .pagination .next a i, .pagination .prev span i, .pagination .next span i {
     font-size: 26px;
     width: 40px;
     display: block;

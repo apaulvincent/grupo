@@ -29,13 +29,6 @@
         padding: 30px 0;
     }
 
-    .featured-image {
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
     .entry {
         background: $tint-w;
     }
@@ -75,6 +68,16 @@
 
     }
 }
+
+
+// CTA blocks
+
+.cta-block {
+    p {
+        @extend .layout-p;
+    }
+}
+
 
 
 // Equal height blocks...
@@ -154,8 +157,13 @@
   
 
 
+// Home Columns ...
 
 .home-column {
+
+    .row {
+        overflow: hidden;
+    }
 
     h1 {
       @extend .layout-h1;
@@ -208,7 +216,8 @@
         
         .img-clip.circle {
           @include round-corners(100%);
-          overflow: hidden;
+            overflow: hidden;
+            @include box-shadow(0 16px 24px 0 rgba(82,97,115,0.14));
         }
       
         img {
@@ -219,20 +228,37 @@
       
   
   
-  }
+}
 
 
 
 
+// Cards 
 
+.card-collection {
 
+    .card-wrap {
+        margin-bottom: 30px;
+    }
 
+    .card {
+        height: 100%;
+        position: relative;
+        border-radius: 15px;
+        @include box-shadow(0 2px 4px 0 rgba(82,97,115,0.2));
+        overflow: hidden;
+        background-color: #FFFFFF;
+        border: none;
+        color: $brand-b;
+        @include transition(0.4s all ease);
 
+        &:hover {
+            @include transform(translateY(-20px));
+            @include box-shadow(0 8px 16px 0 rgba(82,97,115,0.18));
+        }
+    }
 
-
-
-
-
+}
 
 
 
