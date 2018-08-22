@@ -105,3 +105,11 @@
     vertical-align: middle;
   }
 }
+
+
+.floating-btn {
+  position: fixed;
+  z-index: 2;
+  right: 32px;
+  bottom: 32px;
+}

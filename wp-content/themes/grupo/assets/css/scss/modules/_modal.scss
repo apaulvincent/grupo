@@ -1,10 +1,11 @@
 .modal-content {
-    background: $tint-8;
+    background: transparent;
     @include round-corners(0px);
 }
 
 .modal-header {
     padding: 30px 60px 0;
+    border: none;
 
     @include screen-max-sm(){
         padding: 20px 20px 0;
@@ -20,7 +21,8 @@
 }
 
 .modal-body {
-    padding: 0 60px 30px;
+    padding: 0 30px 30px;
+    border: none;
 
     @include screen-max-sm(){
         padding: 0 20px 20px;
@@ -77,10 +79,58 @@
 
 }
 
+.grupo-form-modal {
+    border-radius: 10px;
+
+    .modal-header {
+        padding: 20px 20px 0;
+
+        .close {
+            display: inline-block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1;
+            vertical-align: middle;
+            margin: 0 0 0 auto;
+            @include opacity(1);
+
+             i {
+                vertical-align: middle;
+                font-size: 32px;
+             }
+        }
+
+    }
+
+    .modal-content {
+        background: $tint-w;
+        @include round-corners(10px);
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 120px;
+    }
+
+
+    h2 {
+        font-size: 24px;
+        font-family: $font-1-h;
+    }
+    
+}
+
+
+
 
 @media (min-width: 768px) {
     .modal-xl {
         width: 90%;
         max-width: 856px;
+    }
+
+    .modal-mdx {
+        width: 90%;
+        max-width: 530px;
     }
 }

@@ -41,7 +41,10 @@
 	</section>
 
 
-
 <?php 
+
+$block2 = get_fields(154); // Reusable Block : Questions? We got answers!
+echo $DB_Content->pass_file_to_var('partials/content/standard-content.php', $block2);
+
 
 get_footer();

@@ -1,7 +1,5 @@
 import {debounce} from './helpers';
 
-
-
 (function($) {
 
 

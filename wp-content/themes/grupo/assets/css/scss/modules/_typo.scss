@@ -73,7 +73,7 @@ h5, .h5 {
     margin: 0 0 15px;
 
     @include screen-max-sm(){
-        font-size: 14px;
+        font-size: 16px;
     }  
 }
 
@@ -107,7 +107,7 @@ a {
     font-size: 36px;
 
     @include screen-max-sm(){
-      font-size: 30px;
+      font-size: 26px;
     }
 }
 
@@ -131,24 +131,27 @@ blockquote {
     position: relative;
 }
 
-table {
-    width: 100%;
-    border: 1px solid $tint-8;
-    margin: 30px 0 30px;
-
-    th {
-        padding: 10px;
-        font-weight: normal;
-        background: $tint-9;
-        text-transform: uppercase;
-        border: 1px solid $tint-7;
+.entry {
+    table {
+        width: 100%;
+        border: 1px solid $tint-8;
+        margin: 30px 0 30px;
+    
+        th {
+            padding: 10px;
+            font-weight: normal;
+            background: $tint-9;
+            text-transform: uppercase;
+            border: 1px solid $tint-7;
+        }
+    
+        td {
+            padding: 10px;
+            border: 1px solid $tint-7;
+            line-height: 1.2;
+        }
     }
-
-    td {
-        padding: 10px;
-        border: 1px solid $tint-7;
-        line-height: 1.2;
-    }
+    
 }
 
 ol, ul {

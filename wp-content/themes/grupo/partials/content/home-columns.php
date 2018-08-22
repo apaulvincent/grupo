@@ -40,6 +40,7 @@ global $DB_Helper, $DB_Content;
                             <?php echo $val['text_content']; ?>
                             <?php echo $DB_Content->get_section_spacer('20'); ?>
                             <a href="<?php echo $val['button_url']; ?>" class="btn btn-jump"><?php echo $val['button_text']; ?></a>
+                            <?php echo $DB_Content->get_section_spacer('30'); ?>
                         </div>
                     </div>
                 </div>
@@ -76,6 +77,7 @@ global $DB_Helper, $DB_Content;
                             <?php echo $val['text_content']; ?>
                             <?php echo $DB_Content->get_section_spacer('20'); ?>
                             <a href="<?php echo $val['button_url']; ?>" class="btn btn-jump"><?php echo $val['button_text']; ?></a>
+                            <?php echo $DB_Content->get_section_spacer('20'); ?>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-<nav class="main-menu d-none d-xl-block">
+<nav class="main-menu d-none d-lg-block">
 	<ul>
 	<?php
 		wp_nav_menu(array(
@@ -16,9 +16,7 @@
 	</ul>
 </nav>
 
-
 <?php include(locate_template('partials/common/contact-info.php')); ?>
-
 
 <nav class="mobile-toggles">
 	<ul>

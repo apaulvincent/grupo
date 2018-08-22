@@ -3,12 +3,18 @@
     margin: 0; // Enable this so no margin below the header on homepage
     
     @include screen-max-md(){
-        height: 400px; 
+        height: 490px; 
     }
 
     @include screen-max-sm(){
-        height: 300px; 
+        height: 490px; 
     }
+
+
+    h2 {
+        font-family: $font-2-h;
+    }
+
 
 }
 
@@ -68,19 +74,24 @@
 
          h1 {
             @extend .mega;
+
+            @include screen-max-sm(){
+                font-size: 52px;
+            } 
+
         }
 
         h2 {
             font-size: 24px;
-            line-height: 1;
+            line-height: 1.4;
             margin: 0 0 34px;
 
             @include screen-max-md(){
-                font-size: 20px;
+                font-size: 16px;
             } 
         
             @include screen-max-sm(){
-                font-size: 18px;
+                font-size: 16px;
             } 
 
         }
@@ -129,9 +140,13 @@
 
     &.on {
         width: 180px;
-        height: 200px;
+        height: 180px;
         background: $brand-7;
         @include round-corners(4px);
+
+        @include screen-max-xs(){
+            height: 210px;
+        } 
 
         .social-share {
             visibility: visible;

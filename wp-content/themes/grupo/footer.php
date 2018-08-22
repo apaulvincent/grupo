@@ -117,29 +117,23 @@
 
 </footer>
 
-<!-- Modal: SF Form-->
-<?php if ( !is_page('contact') ): ?>
-<div class="modal fade" id="dfp-sf-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-md" role="document">
+
+<button class="floating-btn btn btn-2 btn-lg grupo-form-modal-btn"><i class="material-icons">message</i>Enquire</button>
+
+<!-- Modal: Form-->
+<div class="modal fade grupo-form-modal" id="grupo-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-mdx modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+	<div class="modal-header text-right">
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span class="pe-7s-close"></span>
+			<i class="material-icons">close</i>
 		</button>
 	  </div>
       <div class="modal-body">
-		<i class="fas fa-comment"></i>
-	  	<?php echo do_shortcode('[sidebar_content ids="14555"]'); ?>
+	  	<?php echo do_shortcode('[contact-form-7 id="355" title="Send us an enquiry"]'); ?>
       </div>
     </div>
   </div>
-</div>
-<?php endif ?>
-
-
-
-<div class="social-share d-none d-lg-block">
-	<?php //echo do_shortcode('[ssba-buttons]'); ?>
 </div>
 
 <?php wp_footer(); ?>

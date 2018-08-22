@@ -30,13 +30,23 @@ button {
         // @include box-shadow(none);
     }
 
+
+    i.material-icons {
+        font-size: 24px;
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+    }
+
     &.btn-full {
         width: 100%;
     }
 
     &.btn-lg {
-        height: 68px;
-        line-height: 68px; 
+        height: 58px;
+        line-height: 56px; 
+        vertical-align: middle;
+        padding: 0 30px;
+        @include round-corners(28px);
     }
 
     &:disabled {
@@ -55,9 +65,10 @@ button {
     @include round-corners(58px);
     @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.98));
     
-    i {
+    i.material-icons {
         vertical-align: middle;
         font-size:22px;
+        margin: 0;
     }
 
 
@@ -92,11 +103,17 @@ button {
     }
 }
 
-
 .btn-2 {
-    border-color: $tint-2;
-    background: $tint-2;
+    border-color: $tint-b;
+    background: $tint-b;
     color: $brand-w !important;
+    @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.18));
+
+    &:hover {
+        @include transform(translateY(-10px));
+        @include box-shadow(0 8px 16px 0 rgba(82,97,115,0.18));
+    }
+
 }
 
 .btn-3 {

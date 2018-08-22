@@ -1,3 +1,18 @@
+.form-wrap {
+	max-width: 530px;
+	margin: 0 auto;
+	text-align: left;
+
+	br {
+		display: none;
+	}
+
+	.btn {
+		width: 100%;
+		max-width: 250px;
+	}
+}
+
 .select-wrap {
 	position: relative;
 	width: 100%;
@@ -29,14 +44,14 @@
 select, 
 select.form-control {
 	font-family: $font-1-r;
-	font-size: 14px;
+	font-size: 18px;
 	padding: 0 15px;
 	margin: 0;
 	height: 50px !important;
 	line-height: 1.2;
 	vertical-align: middle;
 	width: 100%;
-	background: $tint-w;
+	background: $tint-8;
 	outline: none;
 	color: $brand-b;
 	border: 1px solid $brand-8;
@@ -66,7 +81,8 @@ select.form-control {
 }
 
 label {
-	font-size: 14px;
+	font-size: 16px;
+	color: $brand-9;
 }
 
 input[type="text"],
@@ -76,26 +92,26 @@ input[type="email"],
 input[type="date"],
 input[type="password"] {
 	font-family: $font-1-r;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 0 15px;
 	margin: 0;
-	height: 50px;
+	height: 40px;
 	line-height: 1.2;
 	vertical-align: middle;
 	width: 100%;
-	background: $tint-w;
+	background: $tint-8;
 	outline: none;
 	color: $brand-b;
-	border: 1px solid $brand-b;
+	border: 1px solid $tint-8;
 	width: 100%;
 
 	 -webkit-appearance: none; 
 	 -moz-appearance: none;
 
-	&::-webkit-input-placeholder {color: $brand-b; }
-	&:-moz-placeholder {color: $brand-b; opacity: 1; } 
-	&::-moz-placeholder {color: $brand-b; opacity: 1; } 
-	&:-ms-input-placeholder {color: $brand-b; }
+	&::-webkit-input-placeholder {color: $brand-9; }
+	&:-moz-placeholder {color: $brand-9; opacity: 1; } 
+	&::-moz-placeholder {color: $brand-9; opacity: 1; } 
+	&:-ms-input-placeholder {color: $brand-9; }
 
 	&::-webkit-inner-spin-button,
 	&::-webkit-outer-spin-button {
@@ -107,11 +123,12 @@ input[type="password"] {
 		border: 1px solid $brand-4;
 	}
 
-	@include round-corners(0);
+	@include round-corners(3px);
 	// @include transition(0.4s all ease);
 	@include box-shadow(none);
 
 	&:focus, &:active {
+		background: $tint-8;
 		outline: none;
 		border-color:  $tint-6;
 		@include box-shadow(none);
@@ -123,29 +140,31 @@ input[type="password"] {
 
 textarea, textarea.form-control {
 	font-family: $font-1-r;
-	font-size: 14px;
+	font-size: 18px;
 	width: 100%;
+	height: 180px;
 	padding: 18px;
 	line-height: 1.2;
 	text-align: left;
 	outline: none;
 	margin: 0 auto;
-	background: $tint-w;
+	background: $tint-8;
 	outline: none;
 	color: $brand-b;
-	border: 1px solid $brand-8;
+	border: 1px solid $tint-8;
 
 	 -webkit-appearance: none; 
 	 -moz-appearance: none;
 
-	&::-webkit-input-placeholder {color: $brand-b; }
-	&:-moz-placeholder {color: $brand-b; opacity: 1; } 
-	&::-moz-placeholder {color: $brand-b; opacity: 1; } 
-	&:-ms-input-placeholder {color: $brand-b; }
+	&::-webkit-input-placeholder {color: $brand-9; }
+	&:-moz-placeholder {color: $brand-9; opacity: 1; } 
+	&::-moz-placeholder {color: $brand-9; opacity: 1; } 
+	&:-ms-input-placeholder {color: $brand-9; }
 
-	@include round-corners(0);
+	@include round-corners(3px);
 
 	&:focus {
+		background: $tint-8;
 		outline: none;
 		border-color:  $tint-6;
 		@include box-shadow(none);
@@ -215,7 +234,7 @@ span.wpcf7-not-valid-tip, div.wpcf7 img.ajax-loader {
 }
 
 div.wpcf7-response-output {
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 .ajax-loader {
@@ -228,7 +247,7 @@ div.wpcf7-validation-errors {
 	color: $brand-w;
 	padding: 20px;
 	line-height: 1.2em;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -238,7 +257,7 @@ div.wpcf7-mail-sent-ok {
 	color: $brand-w;
 	padding: 20px;
 	line-height: 1.2em;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -248,7 +267,7 @@ div.wpcf7-mail-sent-ng {
 	color: $brand-w;
 	padding: 20px;
 	line-height: 1.2em;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -262,14 +281,14 @@ div.wpcf7-mail-sent-ng {
 .mc4wp-form input[type=url]
 {
 	font-family: $font-1-r;
-	font-size: 14px;
+	font-size: 18px;
 	padding: 0 15px;
 	margin: 0;
 	height: 50px !important;
 	line-height: 1.2;
 	vertical-align: middle;
 	width: 100%;
-	background: $tint-w;
+	background: $tint-8;
 	outline: none;
 	color: $brand-b;
 	border: 1px solid $tint-w;
@@ -307,4 +326,54 @@ div.wpcf7-mail-sent-ng {
 .g-recaptcha * {
 	text-align: center;
 	margin: 0 auto;
+}
+
+
+// Custom 
+
+.wpcf7-form-control-wrap.budget {
+	display: block;
+	position: relative;
+
+	.form-control {
+		padding-left: 26px;
+	}
+
+	&:before {
+		content: '$';
+		display: block;
+		position: absolute;
+		left: 12px;
+		top: 9px;
+		color: $brand-9;
+	}
+}
+
+
+.wpcf7-form-control-wrap.event-date {
+	display: block;
+	position: relative;
+
+	background: $tint-8;
+	// outline: none;
+	// color: $brand-b;
+	// border: 1px solid $tint-8;
+
+	@include round-corners(3px);
+
+	input {
+		position: relative;
+		z-index: 1;
+		background: transparent;
+	}
+
+	&:before {
+		@extend .material-icons;
+		content: 'date_range';
+		display: block;
+		position: absolute;
+		right: 12px;
+		top: 9px;
+		color: $brand-b;
+	}
 }

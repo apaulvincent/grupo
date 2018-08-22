@@ -1,13 +1,16 @@
+// require('./vendors/moment');
+var moment = require('moment');
 require('./vendors/jquery.validate.min.js');
 require('./vendors/bootstrap.min.js');
 require('./maps');
 require('./sliders');
 require('./drawers');
+require('./vendors/daterangepicker');
 
 $(document).ready(function(){
 
 
-    $( "#sf-contact-form" ).validate();
+    // $( "#sf-contact-form" ).validate();
 
     // $( "#sf-contact-form" ).validate({
     //         rules: {
@@ -26,27 +29,34 @@ $(document).ready(function(){
     // });
 
 
-    $('.dfp-sf-form-modal-btn').on('click', function(e){
+    $('.date-field').attr('autocomplete', 'new').daterangepicker({
+        locale: {
+            format: 'DD/MM/YYYY'
+        },
+        separator: " : ",
+        singleDatePicker: true,
+        showDropdowns: true,
+        autoUpdateInput: false,
+    }).on('cancel.daterangepicker', function (ev, picker) {
+        $(this).val('');
+    }).on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('DD/MM/YYYY'));
+        $(this).blur();
+    });
+
+
+
+
+    $('.grupo-form-modal-btn').on('click', function(e){
         e.preventDefault();
-        
-        // If contact form, scroll to form
-
-        if( $('section.contact-form').length > 0 ) {
-
-            window.location = '#dfp-sf-form-modal'
-
-        } else {
-
-            $('#dfp-sf-form-modal').modal('show');
-        }
+        $('#grupo-form-modal').modal('show');
 
     })
 
 
-    $('.dfp-subscribe-modal-btn').on('click', function(e){
-        e.preventDefault();
-        $('#dfp-subscribe-modal').modal('show');
-    })
-
+    // $('.dfp-subscribe-modal-btn').on('click', function(e){
+    //     e.preventDefault();
+    //     $('#dfp-subscribe-modal').modal('show');
+    // })
 
 });

@@ -63,7 +63,7 @@
     font-size: 14px;
     margin: 0 0 0 14px;
 
-    @include respond(1400){
+    @include respond(1260){
       margin: 0;
     }
 
@@ -78,7 +78,7 @@
   }
 
   strong {
-      @include respond(1400){
+      @include respond(1260){
         display: none;
       }
   }
