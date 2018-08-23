@@ -42,8 +42,7 @@ import {debounce} from './helpers';
 		})
 
 
-		$('.mobile-main-nav-toggle').on('click', function(e){
-
+		$('.menu-toggle').on('click', function(e){
 			e.preventDefault();
 			$('body').toggleClass('menu-drawer-on');
 		})
@@ -51,7 +50,7 @@ import {debounce} from './helpers';
         // MOBILE NAVIGATION DROPDOWN 
 
 		$('#mobile-main-nav-drawer .menu-inner .menu-item-has-children').each(function(i, e){
-			$(e).append('<button class="fas fa-chevron-down"></button>');
+			$(e).append('<button class="material-icons">expand_more</button>');
 		});
 
 	

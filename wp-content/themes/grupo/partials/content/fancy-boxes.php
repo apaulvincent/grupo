@@ -42,7 +42,7 @@ global $DB_Helper, $DB_Content;
 
                 <div class="eq-content">
                     <?php echo $val['writeup']; ?>
-                    <?php echo $DB_Content->get_section_spacer('20'); ?>
+                    <?php echo $DB_Content->get_section_spacer('20', ['d-none', 'd-lg-block']); ?>
                     <span class="btn btn-1 btn-full"><?php echo $val['button_text']; ?></span>
                 </div>
             </a>

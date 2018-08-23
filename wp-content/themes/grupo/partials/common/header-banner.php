@@ -75,7 +75,10 @@ $solid_banner = $content ? '' : 'solid';
 	  </div>
       <div class="modal-body text-center">
 	
-	  	<iframe width="856" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video-container">
+	  	    <iframe width="856" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
 
       </div>
     </div>

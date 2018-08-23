@@ -1,4 +1,4 @@
-<nav class="main-menu d-none d-lg-block">
+<nav class="main-menu d-none d-xl-block">
 	<ul>
 	<?php
 		wp_nav_menu(array(
@@ -18,12 +18,10 @@
 
 <?php include(locate_template('partials/common/contact-info.php')); ?>
 
-<nav class="mobile-toggles">
+<nav class="mobile-toggles d-xl-none">
 	<ul>
 		<li>
-			<button class="mobile-main-nav-toggle">
-				<span></span>
-			</button>
+			<button id="menu-toggle" class="menu-toggle material-icons">menu</button>
 		</li>
 	</ul>
 </nav>
