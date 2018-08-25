@@ -12,6 +12,15 @@
                     <a href="/blog" class="back-btn"> <i class="material-icons">keyboard_backspace</i> Back to blog</a>
                 <?php endif; ?>
 
+                <?php 
+                
+                if( is_page_template('page-listing.php') ): 
+                
+                // TODO: Get parent info...
+                ?>
+                    <a href="/team-building/" class="back-btn"> <i class="material-icons">keyboard_backspace</i> Back to Team Building</a>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>

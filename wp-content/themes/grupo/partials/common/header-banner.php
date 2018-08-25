@@ -48,13 +48,27 @@ $solid_banner = $content ? '' : 'solid';
 
                         <button class="btn btn-icon btn-outline" data-toggle="modal" data-target="#vid-modal"><i class="material-icons">play_arrow</i></button>
 
-                        <?php elseif($btn_type == 'default'): ?>
+                    <?php elseif($btn_type == 'default'): ?>
 
                         <a href="<?php echo $button_url; ?>" class="btn"><?php echo $button_text; ?></a>
 
                     <?php endif; ?>
 
                 </div>
+
+                <?php if($btn_type == 'share'): ?>
+                    <div class="util-drawer">
+                        <button class="btn btn-icon btn-share toggle">
+                                <i class="material-icons icon-toggle-on">share</i>
+                                <i class="material-icons icon-toggle-off">close</i>
+                        </button>
+
+                        <div class="social-share">
+                            <?php echo do_shortcode('[ssba-buttons]'); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
             </div>
             
         </div>

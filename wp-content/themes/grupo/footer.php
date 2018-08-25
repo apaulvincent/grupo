@@ -4,12 +4,13 @@
 
 <footer class="site-footer">
 
-	<?php echo $DB_Content->get_section_spacer('60'); ?>
+	<?php echo $DB_Content->get_section_spacer('60', ['d-none', 'd-lg-block']); ?>
+	<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
 	
 		<div class="container">
 			<div class="row">
 
-				<div class="col-12 col-lg-2">
+				<div class="col-12 col-lg-2 d-none d-xl-block">
 					<a href="<?php echo home_url(); ?>">
 						<?php
 
@@ -24,7 +25,20 @@
 					</a>
 				</div>
 
-				<div class="col-12 col-lg-5">
+
+				<div class="col-12 col-md-12 col-lg-5 order-lg-3">
+
+					<?php include(locate_template('partials/common/contact-info.php')); ?>
+
+					<div class="social">
+						<h5 class="d-none d-lg-block">Follow Us</h5>
+						<?php include(locate_template('partials/common/socials.php')); ?>
+					</div>
+
+				</div>
+
+
+				<div class="col-12 col-lg-7 col-xl-5 ">
 					<ul class="footer-menu">
 						<?php 
 							wp_nav_menu(
@@ -44,21 +58,13 @@
 					</ul>
 				</div>
 
-				<div class="col-12 col-lg-5">
-					
-					<div class="social">
-						<h5>Follow Us</h5>
-						<?php include(locate_template('partials/common/socials.php')); ?>
-					</div>
-
-					<?php include(locate_template('partials/common/contact-info.php')); ?>
-
-				</div>
 
 			</div>
 		</div>
 
-		<?php echo $DB_Content->get_section_spacer('20'); ?>
+		<?php echo $DB_Content->get_section_spacer('20', ['d-none', 'd-lg-block']); ?>
+		<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
+
 
 		<div class="copyright">
 

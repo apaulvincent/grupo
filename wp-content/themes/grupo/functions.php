@@ -17,12 +17,12 @@ add_image_size( 'banner-image', 1400, 500, true );
 add_image_size( 'listing-image', 560, 560, true );
 add_image_size( 'single-image', 560, 360, true );
 
+add_image_size( 'slide-thumb', 346, 258, true );
+
 add_image_size( 'thumb-sm', 140, 140, true );
 add_image_size( 'thumb-md', 510, 340, true );
 add_image_size( 'thumb-lg', 600, 600, true );
 // add_image_size( 'news-thumb', 790, 99999, false ); // false -> resize no crop
-
-
 
 
 // Pagination
@@ -86,8 +86,6 @@ function wp_pagination() {
 
 
 
-
-
 function excerpt($text, $limit) {
 	$excerpt = explode(' ',$text , $limit);
 	if (count($excerpt)>=$limit) {
@@ -143,101 +141,6 @@ add_shortcode( 'sidebar_content', 'sidebar_content' );
 
 
 
-function dfp_sf_form(){
-
-  global $DB_Content;
-
-  $var = array();
-
-  return $DB_Content->pass_file_to_var('partials/content/dfp-sf-form.php', $var);
-
-}
-add_shortcode('dfp_sf_form', 'dfp_sf_form');
-
-
-// Category listing
-function dfp_list_categories( $atts ) {
-
-    $html = "";
-
-    $html .= "<ul class='category-list'>";
-    // Get the ID of a given category
-    $category_id = get_cat_ID( 'Solutions' );
-    $cat_name =  get_cat_name( $category_id );
-
-    // Get the URL of this category
-    $category_link = get_category_link( $category_id );
-
-    $html .= "<li><a href='".esc_url( $category_link )."' >" . $cat_name . "</a></li>";
-
-    // Get the ID of a given category
-    $category_id = get_cat_ID( 'Developer Advice' );
-    $cat_name =  get_cat_name( $category_id );
-
-    // Get the URL of this category
-    $category_link = get_category_link( $category_id );
-
-    $html .= "<li><a href='".esc_url( $category_link )."' >" . $cat_name . "</a></li>";
-
-    // Get the ID of a given category
-    $category_id = get_cat_ID( 'Strategy' );
-    $cat_name =  get_cat_name( $category_id );
-
-    // Get the URL of this category
-    $category_link = get_category_link( $category_id );
-
-    $html .= "<li><a href='".esc_url( $category_link )."' >" . $cat_name . "</a></li>";
-
-    $html .= "</ul>";
-
-
-    return $html;
-}
-
-add_shortcode( 'dfp_list_categories', 'dfp_list_categories' );
-
-
-// Featured article shortcode
-function dfp_featured_list( $atts ) {
-
-    $html = "";
-
-    $args = array(
-        'post_type' => 'post',
-        'order' => 'ASC',
-        'orderby' => 'rand',
-        'tag' => 'featured',
-        'posts_per_page' => 5
-      );
-
-    $query = new WP_Query( $args );
-
-
-    if( $query->have_posts() ):
-
-      $html .= "<ul>";
-
-      while ( $query->have_posts() ):
-        $query->the_post();
-
-        $html .= "<li><a href='".get_permalink()."' >".get_the_title()."</a></li>";
-
-      endwhile;
-
-      $html .= "</ul>";
-
-    else:
-
-      $html .= "<p class='no-featured'>Sorry, no featured article found.</p>";
-
-    endif;
-
-    return $html;
-}
-
-add_shortcode( 'dfp_featured_list', 'dfp_featured_list' );
-
-
 // Add Widget Area
 function widgets_init() {
 
@@ -252,9 +155,7 @@ function widgets_init() {
   ));
 
 }
-
 add_action( 'widgets_init', 'widgets_init' );
-
 
 
 //Register tag cloud filter callback
@@ -271,6 +172,8 @@ add_filter('widget_tag_cloud_args', 'tag_widget_limit');
 
 
 
+
+
 //  ACF Google Map API key
 function dfp_acf_init() {
 	acf_update_setting('google_api_key', 'AIzaSyCj3H1hUZKVCKqi15bIs1xK4EuxIBf2F5s');
@@ -279,8 +182,6 @@ function dfp_acf_init() {
 add_action('acf/init', 'dfp_acf_init');
 
 
-
 //to fix WP's admin double login bug
 setcookie(TEST_COOKIE, 'WP Cookie check', 0, COOKIEPATH, COOKIE_DOMAIN);
 if ( SITECOOKIEPATH != COOKIEPATH ) setcookie(TEST_COOKIE, 'WP Cookie check', 0, SITECOOKIEPATH, COOKIE_DOMAIN);
-

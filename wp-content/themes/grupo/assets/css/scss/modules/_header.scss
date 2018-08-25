@@ -78,10 +78,4 @@
     }
   }
 
-  strong {
-      @include respond(1260){
-        display: none;
-      }
-  }
-
 }

@@ -43,8 +43,32 @@
 
 <?php 
 
-$block2 = get_fields(154); // Reusable Block : Questions? We got answers!
-echo $DB_Content->pass_file_to_var('partials/content/standard-content.php', $block2);
+$fancy_boxes = array();
+$fancy_boxes['fancy_boxes'] = get_field('fancy_boxes', $post->ID);
+$fancy_boxes['fancy_boxes_title'] = get_field('fancy_boxes_title', $post->ID);
+
+if( $fancy_boxes ) {
+	echo $DB_Content->pass_file_to_var('partials/content/fancy-boxes.php', $fancy_boxes);
+}
+
+
+
+
+
+$content_reusable_blocks = get_field('content_reusable_blocks');
+
+if( $content_reusable_blocks ) {
+
+	$block = get_fields( $content_reusable_blocks );
+	echo $DB_Content->pass_file_to_var('partials/content/'. $block['reusable_block_setup'] .'.php', $block);
+
+} else {
+
+	$block2 = get_fields(154); // Reusable Block : Questions? We got answers!
+	echo $DB_Content->pass_file_to_var('partials/content/standard-content.php', $block2);
+
+}
+
 
 
 get_footer();

@@ -24,8 +24,6 @@ require('./vendors/slick');
 		});
 
 
-
-
 		$('.post-slider').on('init', function(event, slick){
 			
 
@@ -76,6 +74,45 @@ require('./vendors/slick');
 		
 			indicator.text(currentSlide + ' of ' + slideCount)
 			
+		});
+
+
+
+
+		$('.image-gallery').slick({
+			dots: false,
+			arrows: true,
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 4,
+			responsive: [{
+						breakpoint: 768,
+							settings: {
+								arrows: false,
+								centerMode: true,
+								centerPadding: '40px',
+								slidesToShow: 3
+							}
+						},{
+						breakpoint: 480,
+							settings: {
+								arrows: false,
+								centerMode: true,
+								centerPadding: '40px',
+								slidesToShow: 1
+							}
+						}]
+		});
+			
+
+		$('#gallery-modal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget)
+			var id = button.data('img-id');
+
+			var modal = $(this)
+			modal.find('.modal-body img').hide();
+			modal.find('img#gal-' + id).show();
+
 		});
 
 	});

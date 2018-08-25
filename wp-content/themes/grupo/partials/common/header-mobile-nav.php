@@ -14,5 +14,10 @@
 			'link_after' => '</span>',
 		));
 	?>
+
+
+<?php include(locate_template('partials/common/contact-info.php')); ?>
+
+
 </div>
 <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>

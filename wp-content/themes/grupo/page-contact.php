@@ -1,7 +1,7 @@
 <?php
 
     /*
-    * Template Name: DFP Contact
+    * Template Name: Contact Page
     */
 
 	get_header();

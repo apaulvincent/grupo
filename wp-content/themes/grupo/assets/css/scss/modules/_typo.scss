@@ -111,6 +111,15 @@ a {
     }
 }
 
+.layout-h2 {
+    font-family: $font-1-h;
+    font-size: 24px;
+
+    @include screen-max-md(){
+      font-size: 18px;
+    }
+}
+
 .layout-p {
     font-size: 18px;
         

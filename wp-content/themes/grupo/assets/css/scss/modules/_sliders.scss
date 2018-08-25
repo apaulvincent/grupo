@@ -86,3 +86,48 @@
   }
 }
 
+.image-gallery  {
+
+  .slide {
+    padding: 0 10px;
+
+    img {
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+
+  .slick-arrow {
+    top: 55%;
+    @extend .btn-icon;
+    background: $tint-w;
+    z-index: 1;
+    
+
+    @include transform(translateY(-50%));
+  }
+
+  .slick-next {
+    right: 20px;
+
+    &:before {
+      content: 'chevron_right';
+      @extend  .material-icons;
+      font-size: 34px;
+      color: $brand-4;
+
+    }
+  }
+
+  .slick-prev {
+    left: 20px;
+
+    &:before {
+      content: 'chevron_left';
+      @extend  .material-icons;
+      font-size: 34px;
+      color: $brand-4;
+    }
+  }
+
+}

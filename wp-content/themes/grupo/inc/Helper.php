@@ -160,7 +160,7 @@
 
 
 	  public function get_content_by_id($post_id) {
-		$page_data = get_page($post_id);
+		$page_data = get_post($post_id);
 		if ($page_data) {
 		  return $page_data->post_content;  
 		} else {

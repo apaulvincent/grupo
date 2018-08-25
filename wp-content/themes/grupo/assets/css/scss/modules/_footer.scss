@@ -11,6 +11,33 @@ footer.site-footer {
         vertical-align: top;
         margin: 0;
 
+        @include screen-max-sm(){
+            margin: 0 0 20px;
+            float: none;
+            display: block;
+            text-align: center;
+
+            ul {
+                display: inline-block;
+                margin: 0 auto;
+            }
+
+            li {
+                a {
+
+                    img {
+                        margin: 5px 8px 0 0;
+                    }
+
+                    strong{
+                        font-size: 20px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+        }
+
         li {
             display: block;
             margin: 0 0 12px;
@@ -26,6 +53,23 @@ footer.site-footer {
             }
         }
 
+    }
+
+
+    .social {
+        @include screen-max-sm(){
+            display: block;
+            text-align: center;
+            margin: 0 0 40px;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
 
@@ -82,6 +126,41 @@ footer.site-footer {
 
     }
 
+    @include screen-max-sm(){
+        
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+
+        & > li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item-180 {
+            vertical-align: top;
+            width: 50%;
+        }
+        
+        .menu-item-181 {
+            vertical-align: top;
+            width: 50%;
+            margin-top: 30px;
+        }
+        
+        .menu-item-182 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 46%;
+        }
+        
+    }
+
+
 }
 
 
@@ -126,6 +205,10 @@ footer.site-footer {
         display: inline-block;
         vertical-align: top;
         margin: 0 0 0 15px;
+    }
+
+    @include screen-max-sm(){
+        float: none;
     }
 
 }

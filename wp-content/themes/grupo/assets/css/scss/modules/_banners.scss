@@ -11,6 +11,15 @@
     }
 
 
+    h1 {
+        @extend .mega;
+
+        @include screen-max-sm(){
+            font-size: 52px;
+        } 
+
+    }
+
     h2 {
         font-family: $font-2-h;
     }
@@ -28,11 +37,11 @@
     box-shadow: 0 4px 8px 0 rgba(82,97,115,0.18);
 
     @include screen-max-md(){
-        height: 400px; 
+        height: 450px; 
     }
 
     @include screen-max-sm(){
-        height: 300px; 
+        height: 450px; 
     }
 
     .banner-overlay{
@@ -59,27 +68,22 @@
     .banner-content {
         position: absolute;
         width: 100%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
         z-index: 2;
         top: 50%;
         left: 50%;
         color: $brand-w;
-        padding: 0;
+        padding: 0 30px;
         text-align: center;
 
         @include transform(translate(-50%, -50%));
 
         @include screen-max-md(){
-            padding: 0;  
+            padding: 0 30px;
          }
 
-         h1 {
-            @extend .mega;
-
-            @include screen-max-sm(){
-                font-size: 52px;
-            } 
-
-        }
 
         h2 {
             font-size: 24px;
@@ -105,8 +109,11 @@
         z-index: 1;
         top: 100%;
         right: 66px;
-       @include transform(translateY(-29px));
+        @include transform(translateY(-29px));
 
+        @include screen-max-xs(){
+            right: 30px;
+        } 
     }
 
 }
@@ -124,7 +131,6 @@
     @include transition(0.4s all ease);
     @include round-corners(58px);
     @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.18));
-
 
     .social-share {
         visibility: hidden;

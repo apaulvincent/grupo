@@ -18,6 +18,10 @@
             padding: 0 15px;
             position: relative;
 
+            @include respond(1240){
+                padding: 0 10px;
+            }
+
             & > a {
                 font-family: $font-2-h;
                 text-transform: uppercase;
@@ -160,6 +164,7 @@
             margin: 0;
             background: transparent;
             cursor: pointer;
+            outline: none;
         }
     }
 }
@@ -198,7 +203,7 @@
     }
 
     .menu-inner {
-        padding: 40px 0 0;
+        padding: 30px 20px 0;
         margin: 0;
         list-style-type: none;
 
@@ -210,8 +215,9 @@
 
                 &:hover {
                     text-decoration: none;
-                    color: $brand-1;
+                    color: $brand-b;
                 }
+
             }
 
             .sub-menu {
@@ -222,9 +228,19 @@
 
                     a {
                         font-size: 16px;
-                        padding-left: 30px;
+                        padding-left: 10px;
                         display: block;
                         text-transform: none;
+
+                        &:hover {
+                            background: $brand-7;
+                        }
+
+
+                        &:active {
+                            background: $brand-7;
+                        }
+
                     }
 
 
@@ -242,9 +258,9 @@
         padding: 0;
         // border-bottom: 1px solid $tint-6;
 
-        a {
+        & > a {
             display: inline-block;
-            padding: 15px 20px;
+            padding: 14px 0;
         }
     }
 
@@ -253,18 +269,18 @@
 
         & > button {
             position: absolute;
-            font-size: 16px; 
+            font-size: 20px; 
             top: 6px;
-            right: 20px;
+            // right: 20px;
             border: none;
             background: transparent;
-            height: 32px;
-            width: 32px;
-            line-height: 32px;
+            height: 40px;
+            width: 40px;
+            // line-height: 32px;
             vertical-align: middle;
             text-align: center;
             outline: none;
-            color: $tint-w;
+            color: $tint-9;
             cursor: pointer;
             @include transition(0.4s all ease);
 
@@ -285,6 +301,32 @@
         }
     }
 
+
+
+}
+
+.mobile-main-nav-drawer  {
+
+    .contact-info {
+        display: block !important;
+        margin: 22px 0;
+
+          li {
+            font-size: 18px;
+            
+            a {
+                padding-top: 10px;
+                padding-bottom: 2px;
+            }
+
+            img {
+                margin: 0 10px 0 0;
+            }
+            strong {
+                vertical-align: middle;
+            }
+          }
+    }
 }
 
 .mobile-nav-overlay {

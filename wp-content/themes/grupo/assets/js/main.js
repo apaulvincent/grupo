@@ -31344,6 +31344,40 @@ __webpack_require__(135);
 
 			indicator.text(currentSlide + ' of ' + slideCount);
 		});
+
+		$('.image-gallery').slick({
+			dots: false,
+			arrows: true,
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 4,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			}, {
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				}
+			}]
+		});
+
+		$('#gallery-modal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget);
+			var id = button.data('img-id');
+
+			var modal = $(this);
+			modal.find('.modal-body img').hide();
+			modal.find('img#gal-' + id).show();
+		});
 	});
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -34118,60 +34152,54 @@ var _helpers = __webpack_require__(137);
 
 (function ($) {
 
-			$(function () {
+		$(function () {
 
-						$('body').on('drawer:close-all', function (e) {
+				$('body').on('drawer:close-all', function (e) {
+						$('body').removeClass('drawer-on');
+						$('body').removeClass('menu-drawer-on');
+						$('.main-menu li.menu-item-has-children').removeClass('active');
+				});
 
-									$('body').removeClass('drawer-on');
-									$('body').removeClass('menu-drawer-on');
+				$(window).on('resize', (0, _helpers.debounce)(function () {
+						$('body').trigger('drawer:close-all');
+				}, 250));
 
-									$('.main-menu li.menu-item-has-children').removeClass('active');
-						});
+				// $('.main-menu li.menu-item-has-children').on('mouseover', function(e){
+				// 	e.preventDefault();
+				// 	let itemId = $(this).attr('id')
+				// 	itemId = itemId.replace(/[^\d]/g, "");
+				// 	$('.sub-menu-list > .menu-list-row').addClass('hidden')
+				// 	$('.sub-menu-list > #menu-id-' + itemId ).removeClass('hidden')
 
-						$(window).on('resize', (0, _helpers.debounce)(function () {
+				// 	$('body').addClass('menu-drawer-on');
+				// })
 
-									$('body').trigger('drawer:close-all');
-						}, 250));
 
-						$('.main-menu li.menu-item-has-children').on('mouseover', function (e) {
+				$('.menu-toggle').on('click', function (e) {
+						e.preventDefault();
+						$('body').toggleClass('menu-drawer-on');
+				});
 
-									e.preventDefault();
+				// $('#menu-toggle').click();
 
-									var itemId = $(this).attr('id');
 
-									itemId = itemId.replace(/[^\d]/g, "");
+				// MOBILE NAVIGATION DROPDOWN 
+				$('#mobile-main-nav-drawer .menu-inner .menu-item-has-children').each(function (i, e) {
+						var a = $(e).find('> a');
+						$('<button class="material-icons">expand_more</button>').insertAfter(a);
+				});
 
-									$('.sub-menu-list > .menu-list-row').addClass('hidden');
-									$('.sub-menu-list > #menu-id-' + itemId).removeClass('hidden');
+				$('#mobile-main-nav-drawer .menu-inner .menu-item-has-children > button').on('click', function (e) {
+						e.preventDefault();
+						$(this).next('.sub-menu').slideToggle();
+						$(this).toggleClass('on');
+				});
 
-									$('body').addClass('menu-drawer-on');
-						});
-
-						$('.menu-toggle').on('click', function (e) {
-									e.preventDefault();
-									$('body').toggleClass('menu-drawer-on');
-						});
-
-						// MOBILE NAVIGATION DROPDOWN 
-
-						$('#mobile-main-nav-drawer .menu-inner .menu-item-has-children').each(function (i, e) {
-									$(e).append('<button class="material-icons">expand_more</button>');
-						});
-
-						$('#mobile-main-nav-drawer .menu-inner .menu-item-has-children > button').on('click', function (e) {
-
-									e.preventDefault();
-
-									$(this).prev('.sub-menu').slideToggle();
-
-									$(this).toggleClass('on');
-						});
-
-						$('.util-drawer').on('click', '.toggle', function (e) {
-									e.preventDefault();
-									$(this).parent('.util-drawer').toggleClass('on');
-						});
-			});
+				$('.util-drawer').on('click', '.toggle', function (e) {
+						e.preventDefault();
+						$(this).parent('.util-drawer').toggleClass('on');
+				});
+		});
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
