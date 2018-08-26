@@ -11,7 +11,7 @@ global $DB_Helper, $DB_Content;
 
     <?php if( $val['acf_fc_layout'] == 'text_image_row'): ?>
 
-        <?php echo $DB_Content->get_section_spacer('60', ['d-none', 'd-md-block']); ?>
+        <?php echo $DB_Content->get_section_spacer('60', array('d-none', 'd-md-block')); ?>
 
         <section class="home-column">
             <div class="container">
@@ -46,7 +46,7 @@ global $DB_Helper, $DB_Content;
 
     <?php elseif( $val['acf_fc_layout'] == 'image_text_row'): ?>
 
-        <?php echo $DB_Content->get_section_spacer('60', ['d-none', 'd-md-block']); ?>
+        <?php echo $DB_Content->get_section_spacer('60', array('d-none', 'd-md-block')); ?>
 
         <section class="home-column">
             <div class="container">
@@ -85,7 +85,7 @@ global $DB_Helper, $DB_Content;
 
     <?php elseif( $val['acf_fc_layout'] == 'testimonial'): ?>
 
-        <?php echo $DB_Content->get_section_spacer('60', ['d-none', 'd-md-block']); ?>
+        <?php echo $DB_Content->get_section_spacer('60', array('d-none', 'd-md-block')); ?>
 
         <section class="home-column">
             <div class="container">
@@ -121,7 +121,7 @@ global $DB_Helper, $DB_Content;
             </div>
         </section>
 
-    <?php echo $DB_Content->get_section_spacer('60', ['d-md-none']); ?>
+    <?php echo $DB_Content->get_section_spacer('60', array('d-md-none')); ?>
 
     <?php endif; ?>
 

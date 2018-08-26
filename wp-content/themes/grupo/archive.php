@@ -68,7 +68,7 @@ $content = get_fields($posts_page);
 					
 					<div class="col-12 col-lg-3 offset-lg-1">
 
-						<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
+						<?php echo $DB_Content->get_section_spacer('30', array('d-lg-none')); ?>
                         <?php get_sidebar(); ?>
 
 					</div>

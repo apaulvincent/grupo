@@ -5,7 +5,7 @@ global $DB_Helper, $DB_Content;
 ?>
 
 
-<?php echo $DB_Content->get_section_spacer('10', ['d-md-none']); ?>
+<?php echo $DB_Content->get_section_spacer('10', array('d-md-none')); ?>
 
 
 <?php foreach ( $var as $key => $val): ?>
