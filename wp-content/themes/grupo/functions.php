@@ -17,7 +17,7 @@ add_image_size( 'banner-image', 1400, 500, true );
 add_image_size( 'listing-image', 560, 560, true );
 add_image_size( 'single-image', 560, 360, true );
 
-add_image_size( 'slide-thumb', 346, 258, true );
+add_image_size( 'slide-thumb', 460, 342, true );
 
 add_image_size( 'thumb-sm', 140, 140, true );
 add_image_size( 'thumb-md', 510, 340, true );

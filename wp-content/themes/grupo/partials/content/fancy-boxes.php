@@ -29,12 +29,14 @@ if( !isset($var['fancy_boxes']) ) {
 
 <div class="container">
 
+    <?php if( $var['fancy_boxes_title']){ ?>
     <div class="row">
         <div class="col-12 text-center"> 
             <h1 class="layout-h1"><?php echo $var['fancy_boxes_title'] ?></h1>
             <?php echo $DB_Content->get_section_spacer('20'); ?>
         </div>
     </div>
+    <?php } ?>
 
 
     <?php if(!$large): ?>
@@ -44,7 +46,7 @@ if( !isset($var['fancy_boxes']) ) {
 
 
     <div class="wide-gutter row">
-    <?php foreach ( $var['fancy_boxes'] as $key => $val): ?>
+    <?php if($var['fancy_boxes']): foreach ( $var['fancy_boxes'] as $key => $val): ?>
     
             <?php 
                 
@@ -67,7 +69,7 @@ if( !isset($var['fancy_boxes']) ) {
             </div>
 
 
-    <?php endforeach; ?>
+    <?php endforeach; endif;?>
     </div>
 
     <?php if(!$large): ?>

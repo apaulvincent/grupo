@@ -18,13 +18,9 @@ $bg_color = $page_setup['banner_background_color'];
 // Banner opaque if no writeups...
 $solid_banner = $content ? '' : 'solid';
 
-?>
 
-<?php if($image): ?>
+$banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
 
-<?php 
-
-    $banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
 ?>
 
 
@@ -103,8 +99,6 @@ $solid_banner = $content ? '' : 'solid';
 
 
 <?php
-
-endif;
 
 // echo '<pre>';
 // var_dump($slides);

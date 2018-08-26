@@ -9162,7 +9162,7 @@ button {
   width: 100%;
   height: auto;
   z-index: 2;
-  padding: 0 50px;
+  padding: 0 30px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 @media screen and (max-width: 1199px) {
@@ -9185,6 +9185,8 @@ button {
   border-radius: 25px;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px; }
+.eq-blocks.eq-blocks-lg .eq-content {
+  padding: 0 50px; }
 .home-column .row {
   overflow: hidden; }
 .home-column .content-wrap {

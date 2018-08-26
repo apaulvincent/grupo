@@ -105,7 +105,7 @@
         width: 100%;
         height: auto;
         z-index: 2;
-        padding: 0 50px;
+        padding: 0 30px;
         @include transform(translateY(-50%));
 
         @include screen-max-md(){
@@ -146,6 +146,7 @@
 .eq-blocks.eq-blocks-lg {
 
     .eq-content {
+        padding: 0 50px;
 
         h1 {
             @extend .layout-h1;

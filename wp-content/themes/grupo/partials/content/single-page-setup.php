@@ -114,7 +114,7 @@ global $DB_Helper, $DB_Content;
 
 
                         <?php if( $val['activity_for'] ): ?>
-                        <?php foreach ( $val['activity_for'] as $activity): ?>
+                        <?php foreach ( $val['activity_for'] as $key => $activity): if ( $key == 3 ) break; ?>
 
                             <div class="col-12 col-lg-4 text-center">
 

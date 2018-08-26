@@ -19,11 +19,19 @@
 							$cat = $content['post_category'] ? $content['post_category'] : '';
 							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : '1';
 
+
+							$parents = array($post->ID);
+
+							// List all teambuilding..
+							if( is_page('all-team-building-activities') ) {
+								$parents = array(619, 621, 617, 615, 90);
+							}
+
 							$args = array(
 								'post_type'      => 'page',
 								'posts_per_page' => -1, 
 								'paged'          => $paged,
-								'post_parent'    => $post->ID,
+								'post_parent__in'    => $parents,
 								'order'          => 'ASC',
 								'orderby'        => 'menu_order'
 							);

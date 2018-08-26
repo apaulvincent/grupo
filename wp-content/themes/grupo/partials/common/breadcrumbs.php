@@ -16,9 +16,13 @@
                 
                 if( is_page_template('page-listing.php') ): 
                 
-                // TODO: Get parent info...
+                    $parent = wp_get_post_parent_id( $post->ID );
+                    $parent_post = get_post($parent);
+
+                    $parent_post_title = $parent_post->post_title;
+
                 ?>
-                    <a href="/team-building/" class="back-btn"> <i class="material-icons">keyboard_backspace</i> Back to Team Building</a>
+                    <a href="<?php echo get_permalink($parent); ?>" class="back-btn"> <i class="material-icons">keyboard_backspace</i> Back to <?php echo $parent_post_title; ?></a>
                 <?php endif; ?>
 
             </div>
