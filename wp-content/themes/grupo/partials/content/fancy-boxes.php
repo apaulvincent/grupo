@@ -62,7 +62,7 @@ if( !isset($var['fancy_boxes']) ) {
 
                     <div class="eq-content">
                         <?php echo $val['writeup']; ?>
-                        <?php echo $DB_Content->get_section_spacer('20', ['d-none', 'd-lg-block']); ?>
+                        <?php echo $DB_Content->get_section_spacer('20', array('d-none', 'd-lg-block')); ?>
                         <span class="btn btn-1 btn-full"><?php echo $val['button_text']; ?></span>
                     </div>
                 </a>

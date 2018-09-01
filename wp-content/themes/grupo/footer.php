@@ -4,8 +4,8 @@
 
 <footer class="site-footer">
 
-	<?php echo $DB_Content->get_section_spacer('60', ['d-none', 'd-lg-block']); ?>
-	<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
+	<?php echo $DB_Content->get_section_spacer('60', array('d-none', 'd-lg-block')); ?>
+	<?php echo $DB_Content->get_section_spacer('30', array('d-lg-none')); ?>
 	
 		<div class="container">
 			<div class="row">
@@ -62,8 +62,8 @@
 			</div>
 		</div>
 
-		<?php echo $DB_Content->get_section_spacer('20', ['d-none', 'd-lg-block']); ?>
-		<?php echo $DB_Content->get_section_spacer('30', ['d-lg-none']); ?>
+		<?php echo $DB_Content->get_section_spacer('20', array('d-none', 'd-lg-block')); ?>
+		<?php echo $DB_Content->get_section_spacer('30', array('d-lg-none')); ?>
 
 
 		<div class="copyright">

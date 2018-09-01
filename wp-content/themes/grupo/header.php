@@ -66,7 +66,7 @@ $page_setup = get_fields();
 			</div>
 	</header><!-- #masthead -->
 
-	<?php echo $DB_Content->get_section_spacer('76', ['header-spacer']); ?>
+	<?php echo $DB_Content->get_section_spacer('76', array('header-spacer')); ?>
 
 	<?php include(locate_template('partials/common/header-mobile-nav.php')); ?>
 
