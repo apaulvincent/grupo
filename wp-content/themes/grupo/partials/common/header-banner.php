@@ -86,9 +86,8 @@ $banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
       <div class="modal-body text-center">
 	
         <div class="video-container">
-	  	    <iframe width="856" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  	    <iframe width="856" id="vid-modal-frame" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen allowscriptaccess="always"></iframe>
         </div>
-
 
       </div>
     </div>

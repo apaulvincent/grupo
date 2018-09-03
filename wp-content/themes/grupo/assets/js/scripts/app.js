@@ -54,6 +54,13 @@ $(document).ready(function(){
     })
 
 
+    // Stop video on close
+    $('#vid-modal').on('hidden.bs.modal', function(){
+
+        $('#vid-modal-frame')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');    
+
+    })
+
     // $('.dfp-subscribe-modal-btn').on('click', function(e){
     //     e.preventDefault();
     //     $('#dfp-subscribe-modal').modal('show');

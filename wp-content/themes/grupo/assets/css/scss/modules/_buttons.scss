@@ -15,7 +15,7 @@ button {
     font-family: $font-1-b;
     white-space: pre-wrap;
     text-decoration: none !important;
-    @include round-corners(22px);
+    @include round-corners(32px);
     @include transition(0.4s all ease);
     @include box-shadow(0 4px 8px 0 rgba(255,0,160,0.25));
 
@@ -26,10 +26,11 @@ button {
     &:active:focus {
         color: $brand-w;
         outline: none;
+        background: #dd008b;
+        border-color: #dd008b;
         // @include opacity(0.8);
         // @include box-shadow(none);
     }
-
 
     i.material-icons {
         font-size: 24px;
@@ -46,7 +47,7 @@ button {
         line-height: 56px; 
         vertical-align: middle;
         padding: 0 30px;
-        @include round-corners(28px);
+        @include round-corners(38px);
     }
 
     &:disabled {
@@ -71,6 +72,10 @@ button {
         margin: 0;
     }
 
+    &:hover {
+        border-color: $tint-w;
+    }
+
 
 }
 
@@ -80,7 +85,7 @@ button {
 
 .btn-jump {
     &:hover {
-        @include transform(translateY(-10px));
+        @include transform(translateY(-5px));
         @include box-shadow(0 8px 16px 0 rgba(255,0,160,0.25));
     }
 }
@@ -100,6 +105,7 @@ button {
     &:hover {
         background: $tint-w;
         color: $brand-b;
+        border-color: $tint-w;
     }
 }
 
@@ -110,6 +116,8 @@ button {
     @include box-shadow(0 4px 8px 0 rgba(82,97,115,0.18));
 
     &:hover {
+        background: #2f3740;
+        border-color: #2f3740;
         @include transform(translateY(-10px));
         @include box-shadow(0 8px 16px 0 rgba(82,97,115,0.18));
     }

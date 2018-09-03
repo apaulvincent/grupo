@@ -102,9 +102,13 @@
     @extend .btn-icon;
     background: $tint-w;
     z-index: 1;
-    
 
     @include transform(translateY(-50%));
+
+    &:hover {
+
+      background: #f3f3f3;
+    }
   }
 
   .slick-next {

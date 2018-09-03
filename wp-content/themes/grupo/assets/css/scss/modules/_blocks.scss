@@ -256,7 +256,7 @@
         @include transition(0.4s all ease);
 
         &:hover {
-            @include transform(translateY(-20px));
+            @include transform(translateY(-5px));
             @include box-shadow(0 8px 16px 0 rgba(82,97,115,0.18));
         }
     }
