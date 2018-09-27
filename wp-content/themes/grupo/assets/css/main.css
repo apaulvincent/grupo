@@ -9142,7 +9142,7 @@ button {
   position: relative;
   display: block;
   height: 0px;
-  padding-bottom: 100%;
+  padding-bottom: 95%;
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -9153,6 +9153,9 @@ button {
   -webkit-border-radius: 25px;
   -webkit-transition: 0.4s all ease;
   transition: 0.4s all ease; }
+@media screen and (max-width: 767px) {
+    .eq-blocks .eq-block {
+      padding-bottom: 100%; } }
 .eq-blocks .eq-block .btn {
     max-width: 178px; }
 .eq-blocks .eq-block:hover {
@@ -9191,9 +9194,14 @@ button {
   filter: alpha(opacity=15);
   border-radius: 25px;
   -moz-border-radius: 25px;
-  -webkit-border-radius: 25px; }
+  -webkit-border-radius: 25px;
+  background-size: cover;
+  background-position: center; }
 .eq-blocks.eq-blocks-lg .eq-content {
   padding: 0 50px; }
+@media screen and (max-width: 767px) {
+    .eq-blocks.eq-blocks-lg .eq-content {
+      padding: 0 20px; } }
 .home-column .row {
   overflow: hidden; }
 .home-column .content-wrap {

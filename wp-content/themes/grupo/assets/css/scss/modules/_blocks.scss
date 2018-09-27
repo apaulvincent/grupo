@@ -74,7 +74,7 @@
         position: relative;
         display: block;
         height: 0px;
-        padding-bottom: 100%;
+        padding-bottom: 95%;
         background-size: cover;
         background-position: center;
         color: $brand-w;
@@ -83,6 +83,9 @@
         @include round-corners(25px);
         @include transition(0.4s all ease);
 
+        @include screen-max-xs(){
+            padding-bottom: 100%;
+        }
 
         .btn {
             max-width: 178px;
@@ -140,6 +143,8 @@
         z-index: 1;
         @include opacity(0.15);
         @include round-corners(25px);
+        background-size: cover;
+        background-position: center;
     }
 }
 
@@ -147,6 +152,10 @@
 
     .eq-content {
         padding: 0 50px;
+
+        @include screen-max-xs(){
+            padding: 0 20px;
+        }
 
         h1 {
             @extend .layout-h1;
