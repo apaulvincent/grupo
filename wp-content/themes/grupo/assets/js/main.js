@@ -29386,16 +29386,20 @@ $(document).ready(function () {
         $('#grupo-form-modal').modal('show');
     });
 
-    // Stop video on close
+    // Stop | Start video on close | open
     $('#vid-modal').on('hidden.bs.modal', function () {
-
         $('#vid-modal-frame')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
     });
 
-    // $('.dfp-subscribe-modal-btn').on('click', function(e){
-    //     e.preventDefault();
-    //     $('#dfp-subscribe-modal').modal('show');
-    // })
+    $('#vid-modal').on('shown.bs.modal', function () {
+        $('#vid-modal-frame')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    });
+
+    $('#vid-banner-btn').on('click', function () {
+        $(this).parents('#main-banner').addClass('vid-play');
+
+        $('#vid-modal-frame')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 

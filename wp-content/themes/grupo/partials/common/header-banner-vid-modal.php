@@ -35,29 +35,14 @@ $banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
     <div class="row">
         <div class="col-12">
 
-            <div id="main-banner" class="main-banner" style="background-color: <?php echo $bg_color ?>">
-
-
+            <div class="main-banner" style="background-color: <?php echo $bg_color ?>">
                 <div class="banner-overlay <?php echo $solid_banner; ?>" style="background-image: url(<?php echo $banner_image_url[0]; ?>);"></div>
-
-
-                <!-- Video Banner -->
-                <?php if($btn_type == 'video' && $video_url != ''): ?>
-
-                <div id="vid-banner" class="vid-banner">
-                    <div class="video-container">
-                        <iframe width="856" id="vid-modal-frame" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen allowscriptaccess="always"></iframe>
-                    </div>
-                </div>
-
-                <?php endif; ?>
-
                 <div class="banner-content">
                     <?php echo $content; ?>
 
                     <?php if($btn_type == 'video'): ?>
 
-                        <button class="btn btn-icon btn-outline" id="vid-banner-btn"><i class="material-icons">play_arrow</i></button>
+                        <button class="btn btn-icon btn-outline" data-toggle="modal" data-target="#vid-modal"><i class="material-icons">play_arrow</i></button>
 
                     <?php elseif($btn_type == 'default'): ?>
 
@@ -85,6 +70,31 @@ $banner_image_url = wp_get_attachment_image_src($image, 'banner-image');
         </div>
     </div>
 </div>
+
+
+
+<?php if($btn_type == 'video' && $video_url != ''): ?>
+<!-- Modal: Subscribe Form-->
+<div class="modal fade vid-modal" id="vid-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-right">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<i class="material-icons">close</i> close
+		</button>
+	  </div>
+      <div class="modal-body text-center">
+	
+        <div class="video-container">
+	  	    <iframe width="856" id="vid-modal-frame" height="480" src="https://www.youtube.com/embed/<?php echo $video_url; ?>?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen allowscriptaccess="always"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
 
 
 <?php

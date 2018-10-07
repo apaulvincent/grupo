@@ -9565,6 +9565,44 @@ button {
     box-shadow: none; }
 .util-drawer .toggle:hover {
       border: #FF00A0; }
+@media screen and (max-width: 991px) {
+  .main-banner.vid-play {
+    height: auto; } }
+.main-banner.vid-play .banner-overlay, .main-banner.vid-play .banner-content {
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+.main-banner.vid-play .vid-banner {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+.vid-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px; }
+@media screen and (max-width: 991px) {
+    .vid-banner {
+      position: static; } }
+.vid-banner .video-container {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+@media screen and (max-width: 991px) {
+      .vid-banner .video-container {
+        top: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0); } }
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
